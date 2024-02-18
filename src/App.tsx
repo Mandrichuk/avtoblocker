@@ -10,17 +10,19 @@ import Catalog from "./components/Catalog";
 import Footer from "./components/Footer";
 import Order from "./components/Order";
 import SystemManagment from "./components/SystemManagment";
+import HowItWorks from "./components/HowItWorks";
 
 function Page() {
   return (
     <>
       <Header />
       <About />
-      <Advantages />
       <Benefits />
       <Catalog />
-      <Order />
       <SystemManagment />
+      <HowItWorks />
+      <Advantages />
+      <Order />
       <Footer />
     </>
   );
