@@ -1,0 +1,29 @@
+@import "config";
+@import "about";
+@import "benefits";
+@import "catalog";
+@import "footer";
+@import "header";
+@import "howItWorks";
+@import "advantages";
+@import "managment";
+@import "order";
+@import "managment"; 
+
+body {
+  background-color: $primary-color;
+  color: set-text-color($primary-color);
+  line-height: 1;
+  font-size: size("article");
+}
+
+#root {
+  @include flexCenter(column);
+  width: 100%;
+
+  .wrapper {
+    @include flexCenter(column);
+    background-color: $secondary-color;
+    width: $wrapper-width;
+  }
+}
