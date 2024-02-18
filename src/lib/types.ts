@@ -30,6 +30,7 @@ type HeaderContent = {
 export type Header = {
   ru: HeaderContent;
   en: HeaderContent;
+  sk?: HeaderContent; 
 };
 
 type AboutArticle = {
@@ -45,9 +46,10 @@ type AboutContent = {
 export type About = {
   ru: AboutContent;
   en: AboutContent;
+  sk?: HeaderContent; 
 };
 
-export type Benefit = {
+type Benefit = {
   title: string;
   article: string;
   icon: React.ElementType;
@@ -63,6 +65,7 @@ type BenefitsContent = {
 export type Benefits = {
   ru: BenefitsContent;
   en: BenefitsContent;
+  sk?: HeaderContent; 
 };
 
 type BlockerArticle = {
@@ -86,6 +89,7 @@ type SystemManagmentContent = {
 export type SystemManagment = {
   ru: SystemManagmentContent;
   en: SystemManagmentContent;
+  sk?: HeaderContent; 
 };
 
 type HowItWorksContent = {
@@ -97,6 +101,7 @@ type HowItWorksContent = {
 export type HowItWorks = {
   ru: HowItWorksContent;
   en: HowItWorksContent;
+  sk?: HeaderContent; 
 };
 
 type Advantage = {
@@ -114,6 +119,7 @@ type AdvantagesContent = {
 export type Advantages = {
   ru: AdvantagesContent;
   en: AdvantagesContent;
+  sk?: HeaderContent; 
 };
 
 export type Input = {
@@ -140,6 +146,7 @@ type OrderContent = {
 export type Order = {
   ru: OrderContent;
   en: OrderContent;
+  sk?: HeaderContent; 
 };
 
 type SocialLink = {
@@ -162,4 +169,5 @@ type FooterContent = {
 export type Footer = {
   ru: FooterContent;
   en: FooterContent;
+  sk?: HeaderContent; 
 };

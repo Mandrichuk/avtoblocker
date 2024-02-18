@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./scss/index.scss";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -13,17 +13,24 @@ import SystemManagment from "./components/SystemManagment";
 import HowItWorks from "./components/HowItWorks";
 
 function Page() {
+  // ru, en, sk
+  const [lang, setLang] = useState<"en" | "ru" | "sk">("en");
+
+  const changeLang = (newLang: "en" | "ru" | "sk"): void => {
+    setLang(newLang);
+  }
+
   return (
     <>
-      <Header />
-      <About />
-      <Benefits />
-      <Catalog />
-      <SystemManagment />
-      <HowItWorks />
-      <Advantages />
-      <Order />
-      <Footer />
+      <Header changeLang={changeLang} lang={lang}/>
+      <About lang={lang}/>
+      <Benefits lang={lang}/>
+      <Catalog lang={lang}/>
+      <SystemManagment lang={lang}/>
+      <HowItWorks lang={lang}/>
+      <Advantages lang={lang}/>
+      <Order lang={lang}/>
+      <Footer lang={lang}/>
     </>
   );
 }

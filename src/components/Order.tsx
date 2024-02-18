@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-function Order() {
+import { OrderProps } from '../lib/interfaces';
+import { orderText } from '../constants/index';
+
+function Order({lang}: OrderProps) {
+  const orderTextData = orderText[lang];
+
   return (
     <div>Order</div>
-  )
+  );
 }
 
-export default Order
+export default Order;

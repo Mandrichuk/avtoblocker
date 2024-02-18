@@ -182,6 +182,16 @@ export const benefitsText: Benefits = {
   },
 };
 
+// TODO
+// export const catalogText = {
+//   ru: {
+//     title: "Каталог",
+//   },
+//   en: {
+//     title: "Catalog",
+//   },
+// }
+
 export const systemManagementText: SystemManagment = {
   ru: {
     title: "управление системой",

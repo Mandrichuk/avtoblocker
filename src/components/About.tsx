@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
-function About() {
-  return (
-    <div>About</div>
-  )
+import { AboutProps } from "../lib/interfaces";
+import { aboutText } from "../constants";
+
+function About({ lang }: AboutProps) {
+  const aboutTextData = aboutText[lang];
+
+  return <div>About</div>;
 }
 
-export default About
+export default About;
