@@ -1,0 +1,41 @@
+.howItWorksSection {
+  width: 100%;
+  @include flexCenter(column, start);
+  @include sectionMargin;
+  align-items: start;
+  .text {
+    max-width: 600px;
+
+    .title {
+      @include setFont("Poppins", 600);
+      font-size: size("title");
+    }
+
+    .subtitle {
+      @include setFont("Poppins", 300);
+      font-size: size("article");
+      margin-bottom: 3rem;
+    }
+
+    .article {
+      margin-bottom: 2rem;
+    }
+
+    .description {
+      @include setFont("Poppins", 500);
+      position: relative;
+      padding-left: 20px;
+      color: $secondary-color;
+      
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background-color: $secondary-color;
+      }
+    }
+  }
+}

@@ -111,6 +111,7 @@ type HowItWorksContent = {
   title: string;
   subtitle: string;
   article: string;
+  description: string;
 };
 
 export type HowItWorks = {

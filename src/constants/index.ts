@@ -7,6 +7,7 @@ import carHeader from "../assets/carHeader.jpg";
 import robbery from "../assets/robbery.jpg";
 import buttonON from "../assets/buttonON.png";
 import buttonOFF from "../assets/buttonOFF.png";
+import vectorCar from "../assets/vectorCar.png";
 
 import {
   type Header,
@@ -25,6 +26,7 @@ export default {
   robbery,
   buttonON,
   buttonOFF,
+  vectorCar,
 };
 
 export const headerText: Header = {
@@ -298,12 +300,14 @@ export const howItWorksText: HowItWorks = {
     subtitle: "Какие преимущества имеют системы управления BLOCKER:",
     article:
       "BLOCKER представляет собой мощную электронно-механическую блокировку - это высокопрочный стальной цилиндр с телескопически выдвигающимся корпусом и встроенной платой управления. При этом сам узел механической блокировки является энергонезависимым. Питание потребуется только в момент включения или выключения устройства.",
+    description: "Данная система позволяет блокировать основные подвижные узлы автомобиля, связанные с его управлением – педали тормоза и сцепления.",
   },
   en: {
     title: "How BLOCKER works",
     subtitle: "What are the advantages of BLOCKER control systems:",
     article:
       "BLOCKER is a powerful electronic-mechanical locking device - it is a high-strength steel cylinder with a telescopically retractable housing and a built-in control board. Moreover, the mechanical locking unit itself is non-volatile. Power is required only when the device is turned on or off.",
+    description: "This system allows you to lock the main moving nodes of the car, associated with its control - brake pedal and steering linkage.",
   },
 };
 

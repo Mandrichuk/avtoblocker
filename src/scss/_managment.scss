@@ -1,7 +1,8 @@
 .managmentSection {
   @include flexCenter(column, center);
   @include sectionMargin;
-
+  margin-bottom: 0;
+  
   .title {
     @include setFont("Poppins", 600);
     font-size: size("title");
