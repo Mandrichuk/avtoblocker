@@ -1,0 +1,43 @@
+.advantagesSection {
+  @include sectionMargin;
+  @include flexCenter(column, center);
+  width: 100%;
+  margin-bottom: 0;
+
+  .title {
+    @include setFont("Poppins", 600);
+    font-size: size("title");
+    margin-bottom: 3rem;
+  }
+
+  .advantagesGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+
+    .advantage {
+      @include flexCenter(row, center);
+      align-items: start;
+
+      .subtitle {
+        @include setFont("Poppins", 600);
+        font-size: size("subtitle");
+        margin-bottom: 1rem;
+      }
+
+      .icon {
+        margin-right: 2rem;
+        width: 120px;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .buttonContainer {
+    margin-top: 3rem;
+  }
+
+}
