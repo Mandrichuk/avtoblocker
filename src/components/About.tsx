@@ -13,7 +13,7 @@ function About({ lang }: AboutProps) {
   const windowWidth = useWindowWidth();
 
   return (
-    <div className="aboutContainer">
+    <section className="aboutSection">
       <div className="textSection">
         <h1 className="title">{toUpperCase(aboutTextData.title)}</h1>
         {"firstArticle" in aboutTextData && <p>{aboutTextData.firstArticle}</p>}
@@ -26,7 +26,7 @@ function About({ lang }: AboutProps) {
           </div>
         )}
         {"secondArticle" in aboutTextData && (
-          <p>{aboutTextData.secondArticle}</p>
+          <p className="lastArticle">{aboutTextData.secondArticle}</p>
         )}
       </div>
 
@@ -35,7 +35,7 @@ function About({ lang }: AboutProps) {
           <img src={images.robbery} alt="robbery" />
         </div>
       )}
-    </div>
+    </section>
   );
 }
 

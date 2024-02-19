@@ -9,7 +9,7 @@
     padding-top: 60%;
   }
 
-  .aboutContainer {
+  .aboutSection {
     @include flexCenter(column, space-between);
 
     .imgSection {
