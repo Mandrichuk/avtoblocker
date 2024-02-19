@@ -2,7 +2,6 @@
   @include sectionMargin;
   @include flexCenter(column, center);
   width: 100%;
-  margin-bottom: 0;
 
   .title {
     @include setFont("Poppins", 600);

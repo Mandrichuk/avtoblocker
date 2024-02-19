@@ -137,7 +137,6 @@
     @include sectionMargin;
     @include flexCenter(column, center);
     width: 100%;
-    margin-bottom: 0;
 
     .advantagesGrid {
       grid-template-columns: 1fr;

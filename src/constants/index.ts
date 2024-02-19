@@ -409,7 +409,7 @@ export const orderText: Order = {
     sideImage: "sideImage",
     title: "Order form",
     article:
-      "After the formation of an order, our specialist will contact you.",
+      "After the formation of an order, our specialist will contact You.",
     inputs: {
       nameInput: { placeholder: "Name", field: "name", type: "text" },
       surnameInput: { placeholder: "Surname", field: "surname", type: "text" },

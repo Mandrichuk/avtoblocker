@@ -1,0 +1,11 @@
+input[type="text"] {
+  @include setFont("Poppins", 300);
+  font-size: size("article");
+  background: transparent;
+  border: none; 
+  border-bottom: 2px solid rgb(215, 215, 215); 
+  outline: none;
+  padding: 0.7rem;
+  color: set-text-color($primary-color); 
+  padding-bottom: 0;
+}

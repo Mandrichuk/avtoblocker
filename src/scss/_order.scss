@@ -1,0 +1,44 @@
+.orderSection {
+  width: 100%;
+  @include flexCenter(column, center);
+  @include sectionMargin;
+
+  .title {
+    @include setFont("Poppins", 600);
+    font-size: size("title");
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .article {
+    @include setFont("Poppins", 500);
+    font-size: size("subtitle");
+    margin-bottom: 1.5rem;
+  }
+
+  form {
+    @include flexCenter(column, center);
+    width: 100%;
+
+    .inputContainer {
+      width: 100%;
+
+      .namesInputs {
+        @include flexCenter(row, space-between);
+        gap: 0.5rem;
+        width: 100%;
+      }
+
+      input {
+        width: 100%;
+        margin-bottom: 0.7rem;
+      }
+    }
+
+
+    .buttonSubmit {
+      margin-top: 1.5rem;
+      width: 100%;
+    }
+  }
+}
