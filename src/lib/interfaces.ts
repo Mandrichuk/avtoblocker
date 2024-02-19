@@ -12,7 +12,7 @@ export interface BenefitsProps extends Language {}
 
 export interface CatalogProps extends Language {}
 
-export interface SystemManagementProps extends Language {}
+export interface ManagementProps extends Language {}
 
 export interface HowItWorksProps extends Language {}
 

@@ -94,16 +94,16 @@ export type Blocker = {
   articles: BlockerArticle[];
 };
 
-type SystemManagmentContent = {
+type ManagmentContent = {
   title: string;
   subtitle: string;
   activeBlocker: Blocker;
   inactiveBlocker: Blocker;
 };
 
-export type SystemManagment = {
-  ru: SystemManagmentContent;
-  en: SystemManagmentContent;
+export type Managment = {
+  ru: ManagmentContent;
+  en: ManagmentContent;
   sk?: HeaderContent; 
 };
 

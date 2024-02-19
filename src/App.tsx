@@ -9,7 +9,7 @@ import Benefits from "./components/Benefits";
 import Catalog from "./components/Catalog";
 import Footer from "./components/Footer";
 import Order from "./components/Order";
-import SystemManagment from "./components/SystemManagment";
+import Managment from "./components/Managment";
 import HowItWorks from "./components/HowItWorks";
 
 function Page() {
@@ -31,7 +31,7 @@ function Page() {
       <Catalog lang={lang} />
 
       <div className="wrapper">
-        <SystemManagment lang={lang} />
+        <Managment lang={lang} />
         <HowItWorks lang={lang} />
         <Advantages lang={lang} />
         <Order lang={lang} />

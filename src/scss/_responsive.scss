@@ -91,6 +91,47 @@
       }
     }
   }
+
+  .managmentSection {
+    .details {
+      @include flexCenter(row, space-between);
+      align-items: start;
+      gap: 5rem;
+
+      .on {
+        img {
+          width: 100%;
+        }
+
+        .subtitle {
+          @include setFont("Poppins", 600);
+          font-size: size("subtitle");
+          margin: 2rem 0;
+        }
+
+        .article {
+          margin: 1rem 0;
+          @include flexCenter(column, start);
+          align-items: start;
+
+          .icon {
+            margin-right: 1.5rem;
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+
+      .off {
+        img {
+          width: 100%;
+        }
+
+        .article {
+          margin: 2rem 0;
+        }
+      }
+    }
+  }
 }
 
 @include media-sm {
@@ -136,6 +177,62 @@
       }
     }
   }
+
+  .managmentSection {
+    @include flexCenter(column, center);
+    @include sectionMargin;
+
+    .title {
+      @include setFont("Poppins", 600);
+      font-size: size("title");
+      margin-bottom: 3rem;
+    }
+
+    .subtitle {
+      @include setFont("Poppins", 300);
+      font-size: size("subtitle");
+      margin-bottom: 1rem;
+    }
+
+    .details {
+      @include flexCenter(column, space-between);
+      align-items: start;
+      gap: 2rem;
+
+      .on {
+        img {
+          width: 70%;
+        }
+
+        .subtitle {
+          @include setFont("Poppins", 600);
+          font-size: size("subtitle");
+          margin: 1rem 0 2rem 0;
+        }
+
+        .article {
+          margin: 1.5rem 0;
+          @include flexCenter(row, center);
+          align-items: start;
+
+          .icon {
+            margin-right: 1rem;
+            width: 150px;
+          }
+        }
+      }
+
+      .off {
+        img {
+          width: 70%;
+        }
+
+        .article {
+          margin: 1.5rem 0;
+        }
+      }
+    }
+  }
 }
 
 @include media-mob {
@@ -172,6 +269,62 @@
             height: 250px;
             width: 250px;
           }
+        }
+      }
+    }
+  }
+
+  .managmentSection {
+    @include flexCenter(column, center);
+    @include sectionMargin;
+
+    .title {
+      @include setFont("Poppins", 600);
+      font-size: size("title");
+      margin-bottom: 3rem;
+    }
+
+    .subtitle {
+      @include setFont("Poppins", 300);
+      font-size: size("subtitle");
+      margin-bottom: 1rem;
+    }
+
+    .details {
+      @include flexCenter(column, space-between);
+      align-items: start;
+      gap: 2rem;
+
+      .on {
+        img {
+          width: 70%;
+        }
+
+        .subtitle {
+          @include setFont("Poppins", 600);
+          font-size: size("subtitle");
+          margin: 1rem 0 2rem 0;
+        }
+
+        .article {
+          margin: 1.5rem 0;
+          @include flexCenter(column, center);
+          align-items: start;
+
+          .icon {
+            margin-right: 1rem;
+            width: 150px;
+          }
+        }
+      }
+
+      .off {
+        img {
+          width: 70%;
+        }
+
+        .article {
+          margin: 1.5rem 0;
         }
       }
     }

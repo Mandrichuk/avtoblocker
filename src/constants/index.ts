@@ -5,13 +5,15 @@ import { SiTelegram } from "react-icons/si";
 
 import carHeader from "../assets/carHeader.jpg";
 import robbery from "../assets/robbery.jpg";
+import buttonON from "../assets/buttonON.png";
+import buttonOFF from "../assets/buttonOFF.png";
 
 import {
   type Header,
   type About,
   type Benefits,
   type Catalog,
-  type SystemManagment,
+  type Managment,
   type HowItWorks,
   type Advantages,
   type Order,
@@ -21,6 +23,8 @@ import {
 export default {
   carHeader,
   robbery,
+  buttonON,
+  buttonOFF,
 };
 
 export const headerText: Header = {
@@ -181,7 +185,6 @@ export const benefitsText: Benefits = {
   },
 };
 
-// TODO
 export const catalogText: Catalog = {
   ru: {
     title: "Галерея",
@@ -196,7 +199,7 @@ export const catalogText: Catalog = {
       "Ключ-таблетка — 2шт.",
       "Гарантийный срок — 12 месяцев",
     ],
-    button: {name: "Заказать"},
+    button: { name: "Заказать" },
     bgImage: "carImage",
   },
   en: {
@@ -211,12 +214,12 @@ export const catalogText: Catalog = {
       "Key tablet — 2pcs.",
       "Warranty period — 12 months",
     ],
-    button: {name: "Order"},
+    button: { name: "Order" },
     bgImage: "carImage",
   },
 };
 
-export const systemManagementText: SystemManagment = {
+export const managementText: Managment = {
   ru: {
     title: "управление системой",
     subtitle: "Система управления BLOCKER имеет следующие функции:",
