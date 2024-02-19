@@ -1,5 +1,6 @@
 .button {
   @include setFont("Montserrat", 300);
+  @include buttonWidth(100%);
   padding: 10px 20px;
   font-size: size("button");
   border: none;

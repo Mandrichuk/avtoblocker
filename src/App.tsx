@@ -26,7 +26,11 @@ function Page() {
       <div className="wrapper">
         <About lang={lang} />
         <Benefits lang={lang} />
-        <Catalog lang={lang} />
+      </div>
+
+      <Catalog lang={lang} />
+
+      <div className="wrapper">
         <SystemManagment lang={lang} />
         <HowItWorks lang={lang} />
         <Advantages lang={lang} />

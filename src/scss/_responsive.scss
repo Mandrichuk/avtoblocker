@@ -1,6 +1,61 @@
-@include media-lg {
+@include media-xl {
   header {
     padding-top: 50%;
+  }
+
+  .catalogSection {
+    .wrapper {
+      .fullCatalog {
+        .images {
+          .catalogImage {
+            cursor: pointer;
+            img {
+              height: 100px;
+              width: 100px;
+            }
+          }
+        }
+
+        .currentImage {
+          img {
+            height: 500px;
+            width: 500px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-lg {
+  .catalogSection {
+    .wrapper {
+      .fullCatalog {
+        @include flexCenter(column, center);
+
+        .text {
+          margin-left: 0;
+        }
+
+        .images {
+          .catalogImage {
+            cursor: pointer;
+            img {
+              height: 110px;
+              width: 110px;
+            }
+          }
+        }
+
+        .currentImage {
+          margin-bottom: 2rem;
+          img {
+            height: 550px;
+            width: 550px;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -56,6 +111,31 @@
       }
     }
   }
+
+  .catalogSection {
+    .wrapper {
+      .fullCatalog {
+        @include flexCenter(column, center);
+        .images {
+          .catalogImage {
+            cursor: pointer;
+            img {
+              height: 70px;
+              width: 70px;
+            }
+          }
+        }
+
+        .currentImage {
+          margin-bottom: 2rem;
+          img {
+            height: 350px;
+            width: 350px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @include media-mob {
@@ -68,6 +148,31 @@
         width: 96%;
         text-align: center;
         margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .catalogSection {
+    .wrapper {
+      .fullCatalog {
+        @include flexCenter(column, center);
+        .images {
+          .catalogImage {
+            cursor: pointer;
+            img {
+              height: 60px;
+              width: 60px;
+            }
+          }
+        }
+
+        .currentImage {
+          margin-bottom: 2rem;
+          img {
+            height: 250px;
+            width: 250px;
+          }
+        }
       }
     }
   }

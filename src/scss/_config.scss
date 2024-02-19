@@ -12,7 +12,7 @@ $weight-fonts: (
 $font-sizes: (
   "label": clamp(2rem, 4vw, 4rem),
   "title": clamp(1.8rem, 3vw, 3.5rem),
-  "subtitle": clamp(1.4rem, 2vw, 2.5rem),
+  "subtitle": clamp(1.2rem, 1.7vw, 2rem),
   "article": clamp(1rem, 1.5vw, 1.8rem),
   "button": clamp(1.2rem, 1.5vw, 1.4rem)
 );
@@ -49,6 +49,11 @@ $font-families: (
 @function transition($transition-time) {
   @return all map-get($transition-times, $transition-time) ease-in-out;
 }
+
+@mixin buttonWidth($width: auto) {
+  width: $width; 
+}
+
 @mixin setFont($font-family, $font-weight) {
   font-family: $font-family;
   font-weight: $font-weight;
@@ -79,7 +84,14 @@ $font-families: (
   }
 }
 
-@mixin media-lg {
+@mixin media-lg { 
+  @media screen and (max-width: 1250px) {
+    @content;
+  }
+
+}
+
+@mixin media-xl {
   @media screen and (max-width: 1600px) {
     @content;
   }

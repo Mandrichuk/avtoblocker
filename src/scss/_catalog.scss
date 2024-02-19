@@ -1,0 +1,85 @@
+.catalogSection {
+  @include sectionMargin;
+  @include flexCenter(column, center);
+  width: 100%;
+  border: 2px solid $secondary-color;
+  padding: 3rem 0;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url("../assets/bgDecoration.jpg") no-repeat center top;
+  background-size: cover;
+
+  .wrapper {
+    @include flexCenter(column, center);
+    width: $wrapper-width;
+  }
+
+  .title {
+    @include setFont("Poppins", 600);
+    font-size: size("title");
+    margin-bottom: 3rem;
+  }
+
+  .fullCatalog {
+    @include flexCenter(row, center);
+
+    .images,
+    .text {
+      flex: 1;
+    }
+
+    .text {
+      margin-left: 2rem;
+      background-color: rgba($primary-color, 0.8);
+      padding: 1rem;
+      .name {
+        @include setFont("Poppins", 600);
+        font-size: size("title");
+        margin-bottom: 1.5rem;
+      }
+
+      .subtitle {
+        @include setFont("Poppins", 500);
+        font-size: size("subtitle");
+        margin-bottom: 1rem;
+      }
+
+      .article {
+        margin-bottom: 2rem;
+      }
+
+      .benefits {
+        display: grid;
+        gap: 2rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .images {
+      @include flexCenter(row, center);
+      align-items: start;
+      .allImages {
+        @include flexCenter(column, center);
+        margin-right: 1rem;
+
+        .catalogImage {
+          cursor: pointer;
+          img {
+            height: 110px;
+            width: 110px;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .currentImage {
+        flex: 0.75;
+        img {
+          height: 600px;
+          width: 600px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

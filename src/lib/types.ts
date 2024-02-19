@@ -66,6 +66,23 @@ export type Benefits = {
   sk?: HeaderContent; 
 };
 
+
+export type CatalogContent = {
+  title: string;
+  name: string;
+  subtitle: string;
+  article: string;
+  kit: string[];
+  bgImage: string;
+  button: Button;
+}
+
+export type Catalog = {
+  ru: CatalogContent;
+  en: CatalogContent;
+  sk?:CatalogContent; 
+}
+
 type BlockerArticle = {
   image?: string;
   article: string;

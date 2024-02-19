@@ -6,11 +6,11 @@ import { SiTelegram } from "react-icons/si";
 import carHeader from "../assets/carHeader.jpg";
 import robbery from "../assets/robbery.jpg";
 
-
 import {
   type Header,
   type About,
   type Benefits,
+  type Catalog,
   type SystemManagment,
   type HowItWorks,
   type Advantages,
@@ -21,7 +21,7 @@ import {
 export default {
   carHeader,
   robbery,
-}
+};
 
 export const headerText: Header = {
   ru: {
@@ -182,14 +182,39 @@ export const benefitsText: Benefits = {
 };
 
 // TODO
-// export const catalogText = {
-//   ru: {
-//     title: "Каталог",
-//   },
-//   en: {
-//     title: "Catalog",
-//   },
-// }
+export const catalogText: Catalog = {
+  ru: {
+    title: "Галерея",
+    name: "Blocker “Стандарт”",
+    subtitle:
+      "Надежная противоугонная система, которая защитит ваш автомобиль!",
+    article:
+      "С помощью нашей  системы вы будете уверены, что всегда найдете свою машину там, где ее оставили вечером.",
+    kit: [
+      "БЛОКЕР «Стандарт» — 1шт.",
+      "Считыватель контактный — 1шт.",
+      "Ключ-таблетка — 2шт.",
+      "Гарантийный срок — 12 месяцев",
+    ],
+    button: {name: "Заказать"},
+    bgImage: "carImage",
+  },
+  en: {
+    title: "Galery",
+    name: "Blocker “Standard”",
+    subtitle: "A reliable anti-theft system that will protect your car!",
+    article:
+      "With our system, you will be sure that you will always find your car where you left it in the evening.",
+    kit: [
+      "BLOCKER “Standard” — 1pc.",
+      "Contact reader — 1pc.",
+      "Key tablet — 2pcs.",
+      "Warranty period — 12 months",
+    ],
+    button: {name: "Order"},
+    bgImage: "carImage",
+  },
+};
 
 export const systemManagementText: SystemManagment = {
   ru: {

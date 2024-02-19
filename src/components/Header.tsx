@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { HeaderProps } from "../lib/interfaces";
@@ -13,7 +13,6 @@ function Header({ changeLang, lang }: HeaderProps) {
   const headerTextData = headerText[lang] || headerText["en"];
   const windowWidth = useWindowWidth();
   const [open, setOpen] = useState<boolean>(false);
-  console.log(open)
 
   return (
     <header>
@@ -38,9 +37,10 @@ function Header({ changeLang, lang }: HeaderProps) {
             </div>
           </>
         ) : (
-          <div onClick={() => setOpen(!open)} className={`burger-menu ${open && "open"}`}>
-
-          </div>
+          <div
+            onClick={() => setOpen(!open)}
+            className={`burger-menu ${open && "open"}`}
+          ></div>
         )}
       </nav>
 
@@ -48,7 +48,9 @@ function Header({ changeLang, lang }: HeaderProps) {
         <h1 className="title">{headerTextData.title}</h1>
         <p className="subtitle">{toUpperCase(headerTextData.subtitle)}</p>
         <p className="article">{headerTextData.article}</p>
-        <Button>{headerTextData.button.name}</Button>
+        <div>
+          <Button>{headerTextData.button.name}</Button>
+        </div>
       </div>
     </header>
   );
