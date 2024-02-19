@@ -21,3 +21,7 @@ export interface AdvantagesProps extends Language {}
 export interface OrderProps extends Language {}
 
 export interface FooterProps extends Language {}
+
+export interface ButtonProps {
+  children: string;
+}

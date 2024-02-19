@@ -14,7 +14,7 @@ import HowItWorks from "./components/HowItWorks";
 
 function Page() {
   // ru, en, sk
-  const [lang, setLang] = useState<"en" | "ru" | "sk">("en");
+  const [lang, setLang] = useState<"en" | "ru" | "sk">("ru");
 
   const changeLang = (newLang: "en" | "ru" | "sk"): void => {
     setLang(newLang);
@@ -23,7 +23,6 @@ function Page() {
   return (
     <>
       <Header changeLang={changeLang} lang={lang} />
-
       <div className="wrapper">
         <About lang={lang} />
         <Benefits lang={lang} />

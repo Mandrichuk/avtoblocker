@@ -1,0 +1,148 @@
+header {
+  @include flexCenter(row, center);
+  position: relative;
+  width: 100%;
+  max-height: 400px;
+  padding-top: 45.25%;
+  overflow: hidden;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url("../assets/carHeader.jpg") no-repeat center top;
+  background-size: cover;
+  font-family: "Poppins";
+
+  nav {
+    @include flexCenter(row, space-between);
+    position: absolute;
+    top: 15px;
+    width: $wrapper-width;
+
+    .logo {
+      font-weight: weight("bold");
+      font-size: size("subtitle");
+    }
+
+    .burger-menu {
+      position: absolute;
+      right: 0;
+      width: 32px;
+      height: 3px;
+      background-color: set-text-color($primary-color);
+      transition: transition("normal");
+      cursor: pointer;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: -8px;
+        width: 32px;
+        height: 3px;
+        background-color: set-text-color($primary-color);
+        transition: transition("normal");
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 8px;
+        width: 25px;
+        height: 3px;
+        background-color: set-text-color($primary-color);
+        transition: transition("normal");
+      }
+
+      &.open {
+        transform: rotate(360deg);
+        background-color: transparent;
+
+        &::before {
+          transform: rotate(45deg) translate(5px, 8px);
+        }
+
+        &::after {
+          width: 32px;
+          transform: rotate(-45deg) translate(3px, -7px);
+        }
+      }
+    }
+
+    .nav-block {
+      @include flexCenter(row, center);
+      justify-content: space-between;
+      width: 100%;
+      font-size: size("article");
+
+      ul {
+        @include flexCenter(row, center);
+        margin: 0 100px;
+        flex: 1;
+
+        .phone {
+          @include setFont("Poppins", 600);
+          margin-right: 100px;
+        }
+
+        a {
+          @include setFont("Poppins", 200);
+          padding: 0 10px;
+          transition: transition("normal");
+          cursor: pointer;
+
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+
+    .languages {
+      @include flexCenter(row, space-between);
+      gap: 10px;
+
+      p {
+        @include setFont("Poppins", 300);
+        background-color: $darker-gray;
+        cursor: pointer;
+        padding: 2px 14px;
+        border-radius: $border-radius;
+        font-size: size("bold");
+        transition: transition("normal");
+
+        &:hover {
+          background-color: $secondary-color;
+        }
+
+        &.active {
+          background-color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  .header-content {
+    @include flexCenter(column, center);
+    position: absolute;
+    margin-top: 50px;
+    inset: 0;
+    z-index: 0;
+
+    .title {
+      font-weight: weight("bold");
+      font-size: size("label");
+      margin-bottom: 2.2rem;
+    }
+
+    .subtitle {
+      font-weight: weight("bold");
+      font-size: size("subtitle");
+      margin-bottom: 2rem;
+    }
+
+    .article {
+      font-size: size("article");
+      width: $wrapper-width - 5%;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+}

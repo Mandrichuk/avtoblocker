@@ -1,0 +1,19 @@
+.button {
+  padding: 10px 20px;
+  font-size: size("button");
+  border: none;
+  cursor: pointer;
+  background-color: $primary-color;
+  color: set-text-color($primary-color);
+  border-radius: $border-radius;
+  transition: transition("normal");
+  font-weight: weight("normal");
+
+  &.accent {
+    background-color: $secondary-color;
+     
+    &:hover {
+      background-color: brighter-color($secondary-color);
+    }
+  }
+}

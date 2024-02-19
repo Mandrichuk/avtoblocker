@@ -37,7 +37,7 @@ export const headerText: Header = {
     article:
       "Blocker - ориентирована на профессиональную реализацию Ваших индивидуальных пожеланий в направлении комплексного или частичного переоборудования автомобиля. Наша основная специализация - профессиональная защита от угона. Мы позаботимся о безопасности Вашего имущества!",
     button: {
-      name: "Заказать",
+      name: "Заказать блокер",
       path: "/#order",
       type: "button",
       color: "secondary-color",
@@ -66,7 +66,7 @@ export const headerText: Header = {
     article:
       "Blocker is focused on the professional implementation of your individual wishes in the direction of a complete or partial re-equipment of a car. Our main specialization is professional theft protection. We will take care of the safety of your property!",
     button: {
-      name: "Order",
+      name: "Order blocker",
       path: "/#order",
       type: "button",
       color: "secondary-color",

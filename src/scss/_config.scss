@@ -1,27 +1,30 @@
 $primary-color: #202020;
 $secondary-color: #a50808;
-$primary-font: 'Montserrat', sans-serif;
+$darker-gray: #777676;
+$border-radius: 0.1rem;
 $wrapper-width: 90%;
 $weight-fonts: (
-  'light': 300,
-  'regular': 400,
-  'medium': 500,
-  'bold': 700
+  "light": 300,
+  "regular": 400,
+  "medium": 500,
+  "bold": 700
 );
 $font-sizes: (
-  "label": clamp(2.3rem, 4vw, 4.5rem),
-  "title": clamp(2rem, 3vw, 3rem),
-  "subtitle": clamp(1.5rem, 2vw, 2rem),
-  "article": clamp(1rem, 1.5vw, 1.5rem),
+  "label": clamp(1.8rem, 4vw, 4rem),
+  "title": clamp(1.4rem, 3vw, 3rem),
+  "subtitle": clamp(1.2rem, 2vw, 2.5rem),
+  "article": clamp(1rem, 1.5vw, 1.8rem),
+  "button": clamp(1.2rem, 1.5vw, 1.4rem)
 );
-
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: $primary-font;
-}
+$transition-times: (
+  "fast": 0.2s,
+  "normal": 0.35s,
+  "slow": 0.5s
+);
+$font-families: (
+  "Montserrat": Montserrat,
+  "Poppins": Poppins
+);
 
 @function weight($weight-name) {
   @return map-get($weight-fonts, $weight-name);
@@ -39,27 +42,54 @@ $font-sizes: (
   }
 }
 
-@mixin flexCenter($direction) {
+@function brighter-color($base-color) {
+  @return lighten($base-color, 15%);
+}
+
+@function transition($transition-time) {
+  @return all map-get($transition-times, $transition-time) ease-in-out;
+}
+@mixin setFont($font-family, $font-weight) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+}
+
+@mixin flexCenter($direction, $justify) {
   display: flex;
-  justify-content: center;
+  justify-content: $justify;
   align-items: center;
   flex-direction: $direction;
-} 
+}
+
+@mixin media-mb {
+  @media screen and (max-width: 460px) {
+    @content;
+  }
+}
+
+@mixin media-sm {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
 
 @mixin media-md {
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1024px) {
     @content;
   }
 }
 
 @mixin media-lg {
-  @media screen and (min-width: 1024px) {
+  @media screen and (max-width: 1600px) {
     @content;
   }
 }
 
-@mixin media-md {
-  @media screen and (min-width: 1600px) {
-    @content;
-  }
+* {
+  @include setFont("Montserrat", 300);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  line-height: 1.5;
 }

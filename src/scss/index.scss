@@ -8,7 +8,9 @@
 @import "advantages";
 @import "managment";
 @import "order";
-@import "managment"; 
+@import "managment";
+@import "button";
+@import "responsive";
 
 body {
   background-color: $primary-color;
@@ -17,13 +19,17 @@ body {
   font-size: size("article");
 }
 
+a {
+  color: set-text-color($primary-color);
+  text-decoration: none;
+}
+
 #root {
-  @include flexCenter(column);
+  @include flexCenter(column, center);
   width: 100%;
 
   .wrapper {
-    @include flexCenter(column);
-    background-color: $secondary-color;
+    @include flexCenter(column, center);
     width: $wrapper-width;
   }
 }

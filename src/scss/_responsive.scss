@@ -1,0 +1,33 @@
+@include media-lg {
+  header {
+    padding-top: 50%;
+  }
+}
+
+@include media-md {
+  header {
+    padding-top: 60%;
+  }
+}
+
+@include media-sm {
+  header {
+    padding-top: 110%;
+
+    .header-content {
+      margin-top: 60px;
+
+      .title,
+      .subtitle,
+      .article {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+
+@include media-mb {
+  header {
+    padding-top: 150%;
+  }
+}
