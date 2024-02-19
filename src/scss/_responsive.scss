@@ -23,6 +23,19 @@
       }
     }
   }
+
+  .benefitsContainer {
+    .benefitsGrid {
+      grid-template-columns: 1fr;
+    }
+
+    .benefit {
+      .icon {
+        margin-right: 1rem;
+        font-size: 2rem;
+      }
+    }
+  }
 }
 
 @include media-sm {
@@ -45,7 +58,7 @@
   }
 }
 
-@include media-mb {
+@include media-mob {
   header {
     padding-top: 150%;
 

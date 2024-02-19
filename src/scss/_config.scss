@@ -61,7 +61,7 @@ $font-families: (
   flex-direction: $direction;
 }
 
-@mixin media-mb {
+@mixin media-mob {
   @media screen and (max-width: 460px) {
     @content;
   }
