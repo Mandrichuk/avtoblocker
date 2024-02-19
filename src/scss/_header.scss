@@ -2,7 +2,6 @@ header {
   @include flexCenter(row, center);
   position: relative;
   width: 100%;
-  max-height: 400px;
   padding-top: 45.25%;
   overflow: hidden;
   background:
@@ -127,13 +126,15 @@ header {
     z-index: 0;
 
     .title {
+      @include setFont("Poppins", 600);
       font-weight: weight("bold");
       font-size: size("label");
       margin-bottom: 2.2rem;
     }
 
     .subtitle {
-      font-weight: weight("bold");
+      @include setFont("Poppins", 600);
+      text-align: center;
       font-size: size("subtitle");
       margin-bottom: 2rem;
     }

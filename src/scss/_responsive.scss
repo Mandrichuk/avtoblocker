@@ -8,6 +8,21 @@
   header {
     padding-top: 60%;
   }
+
+  .aboutContainer {
+    @include flexCenter(column, space-between);
+
+    .imgSection {
+      flex: 0.75;
+      margin-bottom: 2rem;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 700px;
+      }
+    }
+  }
 }
 
 @include media-sm {
@@ -22,6 +37,10 @@
       .article {
         margin-bottom: 1.5rem;
       }
+
+      .article {
+        width: 92%;
+      }
     }
   }
 }
@@ -29,5 +48,14 @@
 @include media-mb {
   header {
     padding-top: 150%;
+
+    .header-content {
+      .article {
+        font-size: size("article");
+        width: 96%;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+    }
   }
 }

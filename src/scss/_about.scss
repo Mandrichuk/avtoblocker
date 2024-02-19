@@ -1,0 +1,43 @@
+.aboutContainer {
+  @include flexCenter(row, space-between);
+  @include sectionMargin;
+  .textSection {
+    flex: 1.25;
+    margin-right: 2rem;
+
+    .title {
+      @include setFont("Poppins", 600);
+      margin-bottom: 3rem;
+    }
+
+    .accentText {
+      @include setFont("Poppins", 500);
+      position: relative;
+      padding-left: 20px;
+      color: $secondary-color;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background-color: $secondary-color;
+      }
+    }
+
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .imgSection {
+    flex: 0.75;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}

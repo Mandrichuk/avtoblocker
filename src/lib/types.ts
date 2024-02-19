@@ -33,13 +33,11 @@ export type Header = {
   sk?: HeaderContent; 
 };
 
-type AboutArticle = {
-  article: string;
-};
-
 type AboutContent = {
   title: string;
-  articles: AboutArticle[];
+  firstArticle: string;
+  accentArticle: string;
+  secondArticle: string;
   sideImage: string;
 };
 

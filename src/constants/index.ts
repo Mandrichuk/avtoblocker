@@ -3,6 +3,10 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaWhatsappSquare, FaInstagramSquare } from "react-icons/fa";
 import { SiTelegram } from "react-icons/si";
 
+import carHeader from "../assets/carHeader.jpg";
+import robbery from "../assets/robbery.jpg";
+
+
 import {
   type Header,
   type About,
@@ -13,6 +17,11 @@ import {
   type Order,
   type Footer,
 } from "../lib/types";
+
+export default {
+  carHeader,
+  robbery,
+}
 
 export const headerText: Header = {
   ru: {
@@ -78,38 +87,28 @@ export const headerText: Header = {
 export const aboutText: About = {
   ru: {
     title: "О нас",
-    articles: [
-      {
-        article:
-          "Команда BLOCKER основана группой единомышленников в 2005 году и специализируется на дополнительном оборудовании автомобилей. Мы глубоко убеждены, что автомобиль для современного человека – настоящего ценителя высоких технологий – это синоним комфорта и безопасности, отражающий и подчеркивающий индивидуальность его владельца.",
-      },
-      {
-        article:
-          "Имеющийся опыт в области дополнительного оборудования современных автомобилей позволяют нам уверенно приниматься даже за самые нестандартные проекты.",
-      },
-      {
-        article:
-          "Мы рады предложить Вашему вниманию неординарную защиту от угона – электронно-механический иммобилайзер БЛОКЕР, который прошел испытания в Центре сертификации средств охранного назначения МВД Украины и официально одобрен к использованию, о чем свидетельствует полученный сертификат качества.",
-      },
-    ],
+    firstArticle:
+      "Команда BLOCKER основана группой единомышленников в 2005 году и специализируется на дополнительном оборудовании автомобилей. Мы глубоко убеждены, что автомобиль для современного человека – настоящего ценителя высоких технологий – это синоним комфорта и безопасности, отражающий и подчеркивающий индивидуальность его владельца.",
+
+    accentArticle:
+      "Имеющийся опыт в области дополнительного оборудования современных автомобилей позволяют нам уверенно приниматься даже за самые нестандартные проекты.",
+
+    secondArticle:
+      "Мы рады предложить Вашему вниманию неординарную защиту от угона – электронно-механический иммобилайзер БЛОКЕР, который прошел испытания в Центре сертификации средств охранного назначения МВД Украины и официально одобрен к использованию, о чем свидетельствует полученный сертификат качества.",
+
     sideImage: "sideImage",
   },
   en: {
     title: "About",
-    articles: [
-      {
-        article:
-          "The BLOCKER team was founded by a group of like-minded people in 2005 and specializes in additional car equipment. We are deeply convinced that a car for a modern person - a true connoisseur of high technology - is synonymous with comfort and safety, reflecting and emphasizing the individuality of its owner.",
-      },
-      {
-        article:
-          "Having experience in the field of additional equipment of modern cars allows us to truly accept even the most unusual projects.",
-      },
-      {
-        article:
-          "We are pleased to offer to your attention an extraordinary protection against theft - the electronic-mechanical immobilizer BLOCKER, which has been tested at the Certification Center for Security Equipment of the Ministry of Internal Affairs of Ukraine and has been officially approved for use, as evidenced by the received quality certificate.",
-      },
-    ],
+    firstArticle:
+      "The BLOCKER team was founded by a group of like-minded people in 2005 and specializes in additional car equipment. We are deeply convinced that a car for a modern person - a true connoisseur of high technology - is synonymous with comfort and safety, reflecting and emphasizing the individuality of its owner.",
+
+    accentArticle:
+      "Having experience in the field of additional equipment of modern cars allows us to truly accept even the most unusual projects.",
+
+    secondArticle:
+      "We are pleased to offer to your attention an extraordinary protection against theft - the electronic-mechanical immobilizer BLOCKER, which has been tested at the Certification Center for Security Equipment of the Ministry of Internal Affairs of Ukraine and has been officially approved for use, as evidenced by the received quality certificate.",
+
     sideImage: "sideImage",
   },
 };

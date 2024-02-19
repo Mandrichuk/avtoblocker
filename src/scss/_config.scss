@@ -10,9 +10,9 @@ $weight-fonts: (
   "bold": 700
 );
 $font-sizes: (
-  "label": clamp(1.8rem, 4vw, 4rem),
-  "title": clamp(1.4rem, 3vw, 3rem),
-  "subtitle": clamp(1.2rem, 2vw, 2.5rem),
+  "label": clamp(2rem, 4vw, 4rem),
+  "title": clamp(1.8rem, 3vw, 3.5rem),
+  "subtitle": clamp(1.4rem, 2vw, 2.5rem),
   "article": clamp(1rem, 1.5vw, 1.8rem),
   "button": clamp(1.2rem, 1.5vw, 1.4rem)
 );
@@ -83,6 +83,17 @@ $font-families: (
   @media screen and (max-width: 1600px) {
     @content;
   }
+}
+
+@mixin sectionMargin {
+  margin: 4rem 0;
+}
+
+
+@mixin titleText {
+  @include setFont("Poppins", 600);
+  font-size: size("title");
+  font-weight: weight("bold");
 }
 
 * {
