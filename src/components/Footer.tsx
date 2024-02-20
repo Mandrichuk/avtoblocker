@@ -2,6 +2,7 @@ import React from "react";
 
 import { FooterProps } from "../lib/interfaces";
 import { footerText } from "../constants/index";
+import { navigationsText } from "../constants";
 
 import { toUpperCase } from "../utils/toUpperCase";
 
@@ -9,7 +10,7 @@ function Footer({ lang }: FooterProps) {
   const footerTextData = footerText[lang] || footerText["en"];
 
   return (
-    <footer id="footer">
+    <footer id={navigationsText.footer.id}>
       <div className="details">
         <div className="data">
           <div className="title">{footerTextData.title}</div>

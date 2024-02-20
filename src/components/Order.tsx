@@ -2,6 +2,7 @@ import React from "react";
 
 import { OrderProps } from "../lib/interfaces";
 import { orderText } from "../constants/index";
+import { navigationsText } from "../constants";
 
 import { toUpperCase } from "../utils/toUpperCase";
 
@@ -9,7 +10,7 @@ function Order({ lang }: OrderProps) {
   const orderTextData = orderText[lang] || orderText["en"];
 
   return (
-    <section className="orderSection">
+    <section className="orderSection" id={navigationsText.order.id}>
       <div className="imageContainer"></div>
       <div className="form">
         <h1 className="title">{toUpperCase(orderTextData.title)}</h1>

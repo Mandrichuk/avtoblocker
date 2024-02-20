@@ -4,6 +4,7 @@ import images from "../constants/index";
 
 import { HowItWorksProps } from "../lib/interfaces";
 import { howItWorksText } from "../constants";
+import { navigationsText } from "../constants";
 
 import { toUpperCase } from "../utils/toUpperCase";
 
@@ -11,7 +12,7 @@ function HowItWorks({ lang }: HowItWorksProps) {
   const howItWorksTextData = howItWorksText[lang] || howItWorksText["en"];
 
   return (
-    <section className="howItWorksSection">
+    <section className="howItWorksSection" id={navigationsText.howItWorks.id}>
       <div className="text">
         <h1 className="title">{toUpperCase(howItWorksTextData.title)}</h1>
         <div className="subtitle">{howItWorksTextData.subtitle}</div>

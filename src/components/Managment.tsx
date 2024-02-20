@@ -4,6 +4,7 @@ import images from "../constants/index";
 
 import { ManagementProps } from "../lib/interfaces";
 import { managementText } from "../constants/index";
+import { navigationsText } from "../constants";
 
 import { useWindowWidth } from "../utils/useWindowWidth";
 import { toUpperCase } from "../utils/toUpperCase";
@@ -13,7 +14,7 @@ function Managment({ lang }: ManagementProps) {
   const windowWidth = useWindowWidth();
 
   return (
-    <section className="managmentSection" id="managmentSection">
+    <section className="managmentSection" id={navigationsText.managment.id}>
       <h1 className="title">{toUpperCase(managementTextData.title)}</h1>
       <div className="subtitle">{managementTextData.subtitle}</div>
       <div className="details">

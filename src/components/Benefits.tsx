@@ -2,6 +2,7 @@ import React from "react";
 
 import { BenefitsProps } from "../lib/interfaces";
 import { benefitsText } from "../constants";
+import { navigationsText } from "../constants";
 
 import { toUpperCase } from "../utils/toUpperCase";
 import { useWindowWidth } from "../utils/useWindowWidth";
@@ -10,7 +11,7 @@ function Benefits({ lang }: BenefitsProps) {
   const benefitsTextData = benefitsText[lang] || benefitsText["en"];
 
   return (
-    <section className={`benefitsContainer`}>
+    <section className={`benefitsContainer`} id={navigationsText.benefits.id}>
       <h1 className="title">{toUpperCase(benefitsTextData.title)}</h1>
       <div className="benefitsGrid">
         {"benefits" in benefitsTextData &&

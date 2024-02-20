@@ -4,6 +4,7 @@ import images from "../constants/index";
 
 import { AboutProps } from "../lib/interfaces";
 import { aboutText } from "../constants";
+import {  navigationsText } from "../constants";
 
 import { toUpperCase } from "../utils/toUpperCase";
 import { useWindowWidth } from "../utils/useWindowWidth";
@@ -13,7 +14,7 @@ function About({ lang }: AboutProps) {
   const windowWidth = useWindowWidth();
 
   return (
-    <section className="aboutSection">
+    <section className="aboutSection" id={navigationsText.about.id}>
       <div className="textSection">
         <h1 className="title">{toUpperCase(aboutTextData.title)}</h1>
         {"firstArticle" in aboutTextData && <p>{aboutTextData.firstArticle}</p>}

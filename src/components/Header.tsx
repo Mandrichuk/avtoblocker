@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { HeaderProps } from "../lib/interfaces";
 import { headerText } from "../constants";
 import { sosialsText } from "../constants";
+import { navigationsText } from "../constants";
 
 import { toUpperCase } from "../utils/toUpperCase";
 import { useWindowWidth } from "../utils/useWindowWidth";
@@ -15,10 +16,8 @@ function Header({ changeLang, lang }: HeaderProps) {
   const windowWidth = useWindowWidth();
   const [open, setOpen] = useState<boolean>(false);
 
-  console.log(open);
-
   return (
-    <header>
+    <header id={navigationsText.header.id}>
       <nav>
         {/* <img src="" alt="" /> */}
         <p className={`logo ${open && "open"}`}>Logo</p>

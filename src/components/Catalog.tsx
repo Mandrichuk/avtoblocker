@@ -6,6 +6,7 @@ import Button from "./Button";
 
 import { CatalogProps } from "../lib/interfaces";
 import { catalogText } from "../constants/index";
+import { navigationsText } from "../constants";
 
 import { useWindowWidth } from "../utils/useWindowWidth";
 import { toUpperCase } from "../utils/toUpperCase";
@@ -15,7 +16,7 @@ function Catalog({ lang }: CatalogProps) {
   const windowWidth = useWindowWidth();
 
   return (
-    <section className="catalogSection">
+    <section className="catalogSection" id={navigationsText.catalog.id}>
       <div className="wrapper">
         <h1 className="title">{toUpperCase(catalogTextData.title)}</h1>
 

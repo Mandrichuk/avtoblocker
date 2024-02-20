@@ -20,6 +20,7 @@ import {
   type Advantages,
   type Order,
   type Footer,
+  type Navigations,
 } from "../lib/types";
 
 export default {
@@ -28,6 +29,99 @@ export default {
   buttonON,
   buttonOFF,
   vectorCar,
+};
+
+export const navigationsText: Navigations = {
+  header: {
+    ru: {
+      name: "Главная",
+    },
+    en: {
+      name: "Header",
+    },
+    id: "header",
+    include: false,
+  },
+  about: {
+    ru: {
+      name: "О нас",
+    },
+    en: {
+      name: "",
+    },
+    id: "about",
+    include: true,
+  },
+  advantages: {
+    ru: {
+      name: "Преимущества",
+    },
+    en: {
+      name: "Advantages",
+    },
+    id: "advantages",
+    include: true,
+  },
+  catalog: {
+    ru: {
+      name: "Галерея",
+    },
+    en: {
+      name: "Galery",
+    },
+    include: false,
+    id: "catalog",
+  },
+  managment: {
+    ru: {
+      name: "Управление",
+    },
+    en: {
+      name: "Managment",
+    },
+    include: true,
+    id: "managment",
+  },
+  howItWorks: {
+    ru: {
+      name: "Как работает Blocker",
+    },
+    en: {
+      name: "How Blocker works",
+    },
+    include: false,
+    id: "howItWorks",
+  },
+  benefits: {
+    ru: {
+      name: "Достоинства",
+    },
+    en: {
+      name: "Benefits",
+    },
+    include: true,
+    id: "benefits",
+  },
+  order: {
+    ru: {
+      name: "Заказать",
+    },
+    en: {
+      name: "Order",
+    },
+    include: true,
+    id: "order",
+  },
+  footer: {
+    ru: {
+      name: "Контакты",
+    },
+    en: {
+      name: "Contacts",
+    },
+    include: false,
+    id: "footer",
+  },
 };
 
 export const sosialsText: Sosials = [

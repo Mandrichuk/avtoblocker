@@ -193,3 +193,18 @@ export type Footer = {
   en: FooterContent;
   sk?: HeaderContent;
 };
+
+type LanguageItem = {
+  name: string;
+};
+
+type NavigationItem = {
+  ru: LanguageItem;
+  en: LanguageItem;
+  id: string;
+  include: boolean;
+};
+
+export type Navigations = {
+  [key: string]: NavigationItem;
+};

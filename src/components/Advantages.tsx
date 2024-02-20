@@ -4,6 +4,7 @@ import images from "../constants/index";
 
 import { AdvantagesProps } from "../lib/interfaces";
 import { advantagesText } from "../constants/index";
+import { navigationsText } from "../constants";
 
 import { useWindowWidth } from "../utils/useWindowWidth";
 import { toUpperCase } from "../utils/toUpperCase";
@@ -13,7 +14,7 @@ function Advantages({ lang }: AdvantagesProps) {
   const windowWidth = useWindowWidth();
 
   return (
-    <section className="advantagesSection">
+    <section className="advantagesSection" id={navigationsText.advantages.id}>
       <div className="title">{toUpperCase(advantagesTextData.title)}</div>
       <div className="advantagesGrid">
         {"advantages" in advantagesTextData &&
