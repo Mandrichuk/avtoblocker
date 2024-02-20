@@ -209,3 +209,10 @@ type NavigationItem = {
 export type Navigations = {
   [key: string]: NavigationItem;
 };
+
+export type OrderInputs = {
+  name: string;
+  surname: string;
+  phoneNumber: string;
+  email: string;
+}

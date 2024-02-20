@@ -26,3 +26,10 @@ export interface ButtonProps {
   children: string;
   link: string;
 }
+
+export interface InputProps {
+  type: string;
+  placeholder: string;
+  field: string;
+  getValue: (field: string, text: string) => void;
+}

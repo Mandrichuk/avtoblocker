@@ -189,6 +189,15 @@
     .advantagesGrid {
       grid-template-columns: 1fr;
       gap: 2rem;
+
+      .advantage {
+        .icon {
+          img {
+            max-width: 60px;
+            object-fit: cover;
+          }
+        }
+      }
     }
   }
 }
@@ -237,6 +246,26 @@
     }
   }
 
+  .advantagesSection {
+    @include sectionMargin;
+    @include flexCenter(column, center);
+    width: 100%;
+
+    .advantagesGrid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+
+      .advantage {
+        .icon {
+          img {
+            max-width: 40px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+
   .managmentSection {
     @include flexCenter(column, center);
     @include sectionMargin;
@@ -276,7 +305,6 @@
 
           .icon {
             margin-right: 1rem;
-            width: 150px;
             max-width: 40px;
           }
         }
@@ -367,6 +395,26 @@
           img {
             height: 250px;
             width: 250px;
+          }
+        }
+      }
+    }
+  }
+
+  .advantagesSection {
+    @include sectionMargin;
+    @include flexCenter(column, center);
+    width: 100%;
+
+    .advantagesGrid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+
+      .advantage {
+        .icon {
+          img {
+            max-width: 60px;
+            object-fit: cover;
           }
         }
       }

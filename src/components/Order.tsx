@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
+
+import Input from "./Input";
+import Button from "./Button";
 
 import { OrderProps } from "../lib/interfaces";
+import { OrderInputs } from "../lib/types";
+
 import { orderText } from "../constants/index";
 import { navigationsText } from "../constants";
 
@@ -8,6 +13,19 @@ import { toUpperCase } from "../utils/toUpperCase";
 
 function Order({ lang }: OrderProps) {
   const orderTextData = orderText[lang] || orderText["en"];
+  const [orderInputs, setOrderInputs] = useState<OrderInputs>({
+    name: "",
+    surname: "",
+    phoneNumber: "",
+    email: "",
+  });
+
+  function getText(field: string, text: string) {
+    setOrderInputs({
+      ...orderInputs,
+      [field]: text,
+    });
+  }
 
   return (
     <section className="orderSection" id={navigationsText.order.id}>
@@ -19,33 +37,41 @@ function Order({ lang }: OrderProps) {
           <div className="inputContainer">
             <div className="namesInputs">
               {"inputs" in orderTextData && (
-                <input
-                  type="text"
+                <Input
+                  type={orderTextData.inputs.nameInput.type}
                   placeholder={orderTextData.inputs.nameInput.placeholder}
+                  field={orderTextData.inputs.nameInput.field}
+                  getValue={getText}
                 />
               )}
               {"inputs" in orderTextData && (
-                <input
-                  type="text"
+                <Input
+                  type={orderTextData.inputs.surnameInput.type}
                   placeholder={orderTextData.inputs.surnameInput.placeholder}
+                  field={orderTextData.inputs.surnameInput.field}
+                  getValue={getText}
                 />
               )}
             </div>
             {"inputs" in orderTextData && (
-              <input
-                type="text"
+              <Input
+                type={orderTextData.inputs.phoneNumberInput.type}
                 placeholder={orderTextData.inputs.phoneNumberInput.placeholder}
+                field={orderTextData.inputs.phoneNumberInput.field}
+                getValue={getText}
               />
             )}
             {"inputs" in orderTextData && (
-              <input
-                type="text"
+              <Input
+                type={orderTextData.inputs.emailInput.type}
                 placeholder={orderTextData.inputs.emailInput.placeholder}
+                field={orderTextData.inputs.emailInput.field}
+                getValue={getText}
               />
             )}
           </div>
           <div className="buttonSubmit">
-            <button className="button accent" type="submit">{orderTextData.button.name}</button>
+            <Button link="">{orderTextData.button.name}</Button>
           </div>
         </form>
       </div>

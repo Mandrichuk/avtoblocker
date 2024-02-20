@@ -26,10 +26,9 @@
 
       .icon {
         margin-right: 2rem;
-        width: 120px;
 
         img {
-          width: 100%;
+          max-width: 80px;
           object-fit: cover;
         }
       }
@@ -38,5 +37,4 @@
   .buttonContainer {
     margin-top: 3rem;
   }
-
 }

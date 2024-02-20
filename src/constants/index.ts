@@ -446,25 +446,25 @@ export const advantagesText: Advantages = {
     title: "почему blocker не удобен для угонщиков?",
     advantages: [
       {
-        image: "advantageImage",
+        image: gift,
         title: "Это сюрприз",
         article:
           "Блокер незаметен в автомобиле и проявляет себя только в момент угона: при внезапной блокировке системы злодеям не просто понять, почему это произошло и как с этим бороться. ",
       },
       {
-        image: "advantageImage",
+        image: touch,
         title: "Контактная деактивация",
         article:
           "Выключение Блокера происходит только контактным способом при помощи электронного ключа или кнопки VALET, что полностью исключает возможность дистанционного перехвата управляющего сигнала «по воздуху». ",
       },
       {
-        image: "advantageImage",
+        image: kettlebell,
         title: "Прочность и выносливость",
         article:
           "Даже если Блокер будет обнаружен – не существует легких и быстрых способов его взлома или нейтрализации. Система имеет высокопрочный корпус и надежно устанавливается в труднодоступных местах автомобиля.",
       },
       {
-        image: "advantageImage",
+        image: battery,
         title: "Автономность",
         article:
           "Блокер имеет внушительный запас прочности и обеспечивает долгую и безотказную работу системы. Механизм блокиратора надежно защищен от вредных воздействий: пыль, грязь, влага, перепады температур, вибрация.",
@@ -481,25 +481,25 @@ export const advantagesText: Advantages = {
     title: "Why does BLOCKER not work for robbers?",
     advantages: [
       {
-        image: "advantageImage",
+        image: gift,
         title: "This is a surprise",
         article:
           "The BLOCKER unit is invisible in the car and only in the moment of ignition: in the case of a blocking failure, the authorities do not know why it happened and how to deal with it. ",
       },
       {
-        image: "advantageImage",
+        image: touch,
         title: "Contact deactivation",
         article:
           "The BLOCKER is deactivated only with an electronic key or a button VALET, which completely excludes the possibility of a remote interception of the signal «by air». ",
       },
       {
-        image: "advantageImage",
+        image: kettlebell,
         title: "Strength and Endurance",
         article:
           "Even if the Blocker is detected, there are no easy and quick ways to hack or neutralize it. The system has a highly durable housing and is securely installed in hard-to-reach areas of the car.",
       },
       {
-        image: "advantageImage",
+        image: battery,
         title: "Autonomy",
         article:
           "The blocker has an impressive safety margin and ensures long and trouble-free operation of the system. The locking mechanism is reliably protected from harmful influences: dust, dirt, moisture, temperature changes, vibration.",
@@ -520,14 +520,14 @@ export const orderText: Order = {
     title: "Форма заказа",
     article: "После формирования заказа, наш специалист с Вами свяжется.",
     inputs: {
-      nameInput: { placeholder: "Name", field: "name", type: "text" },
-      surnameInput: { placeholder: "Surname", field: "surname", type: "text" },
+      nameInput: { placeholder: "Имя", field: "name", type: "text" },
+      surnameInput: { placeholder: "Фамилия", field: "surname", type: "text" },
       phoneNumberInput: {
-        placeholder: "Phone number",
+        placeholder: "Номер телефона",
         field: "phoneNumber",
         type: "text",
       },
-      emailInput: { placeholder: "Email", field: "email", type: "text" },
+      emailInput: { placeholder: "Email", field: "email", type: "email" },
     },
     button: {
       name: "Отправить",

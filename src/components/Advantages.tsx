@@ -1,17 +1,13 @@
 import React from "react";
 
-import images from "../constants/index";
-
 import { AdvantagesProps } from "../lib/interfaces";
 import { advantagesText } from "../constants/index";
 import { navigationsText } from "../constants";
 
-import { useWindowWidth } from "../utils/useWindowWidth";
 import { toUpperCase } from "../utils/toUpperCase";
 
 function Advantages({ lang }: AdvantagesProps) {
   const advantagesTextData = advantagesText[lang] || advantagesText["en"];
-  const windowWidth = useWindowWidth();
 
   return (
     <section className="advantagesSection" id={navigationsText.advantages.id}>
@@ -21,8 +17,7 @@ function Advantages({ lang }: AdvantagesProps) {
           advantagesTextData.advantages.map((advantage, index) => (
             <div key={`advantage-${index}`} className="advantage">
               <div className="icon">
-                icon
-                {/* <img src={images.robbery} alt="robbery"/> */}
+                <img src={advantage.image} alt="robbery" />
               </div>
               <div className="text">
                 <div className="subtitle">{advantage.title}</div>
