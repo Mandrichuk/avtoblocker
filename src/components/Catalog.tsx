@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import images from "../constants/index";
 
@@ -14,6 +14,7 @@ import { toUpperCase } from "../utils/toUpperCase";
 function Catalog({ lang }: CatalogProps) {
   const catalogTextData = catalogText[lang] || catalogText["en"];
   const windowWidth = useWindowWidth();
+  const [currentImage, setCurrentImage] = useState(1);
 
   return (
     <section className="catalogSection" id={navigationsText.catalog.id}>
@@ -23,18 +24,20 @@ function Catalog({ lang }: CatalogProps) {
         <div className="fullCatalog">
           <div className="images">
             <div className="allImages">
-              <div className="catalogImage">
-                <img src={images.robbery} alt="catalogImage" />
+              <div className="imagesGallery">
+                {catalogText.imagesGallery.map((imageGallery, index) => (
+                  <div onClick={() => setCurrentImage(imageGallery.id)} key={`image-${index}`} className="catalogImage">
+                    <img src={imageGallery.image} alt="catalogImage" />
+                  </div>
+                ))}
               </div>
-              <div className="catalogImage">
-                <img src={images.robbery} alt="catalogImage" />
-              </div>
-              <div className="catalogImage">
-                <img src={images.robbery} alt="catalogImage" />
-              </div>
-            </div>
-            <div className="currentImage">
-              <img src={images.robbery} alt="catalogImage" />
+              {catalogText.imagesGallery.map((imageGallery, index) =>
+                imageGallery.id === currentImage ? (
+                  <div key={index} className="currentImage">
+                    <img src={imageGallery.image} alt="catalogImage" />
+                  </div>
+                ) : null
+              )}
             </div>
           </div>
           <div className="text">

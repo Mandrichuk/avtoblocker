@@ -15,6 +15,10 @@ import customKey from "../assets/customKey.png";
 import kettlebell from "../assets/kettlebell.png";
 import key from "../assets/key.png";
 import touch from "../assets/touch.png";
+import blocker1 from "../assets/blocker1.png";
+import blocker2 from "../assets/blocker2.png";
+import blocker3 from "../assets/blocker3.png";
+import blocker4 from "../assets/blocker4.png";
 
 import {
   type Sosials,
@@ -44,16 +48,20 @@ export default {
   kettlebell,
   key,
   touch,
+  blocker1,
+  blocker2,
+  blocker3,
+  blocker4,
 };
 
 export const inputAlertText: inputAlert = {
   ru: {
-    alert: "*Заполните поле", 
-  }, 
+    alert: "*Заполните поле",
+  },
   en: {
     alert: "*Fill the field",
   },
-}
+};
 
 export const navigationsText: Navigations = {
   header: {
@@ -326,6 +334,7 @@ export const benefitsText: Benefits = {
 };
 
 export const catalogText: Catalog = {
+  imagesGallery: [{image: blocker1, id: 1}, {image: blocker2, id: 2}, {image: blocker3, id: 3}, {image: blocker4, id: 4}],
   ru: {
     title: "Галерея",
     name: "Blocker “Стандарт”",
@@ -340,7 +349,7 @@ export const catalogText: Catalog = {
       "Гарантийный срок — 12 месяцев",
     ],
     button: { name: "Заказать" },
-    bgImage: "carImage",
+    bgImage: "",
   },
   en: {
     title: "Galery",
@@ -355,7 +364,7 @@ export const catalogText: Catalog = {
       "Warranty period — 12 months",
     ],
     button: { name: "Order" },
-    bgImage: "carImage",
+    bgImage: "",
   },
 };
 

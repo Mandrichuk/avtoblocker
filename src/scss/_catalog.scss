@@ -59,8 +59,22 @@
       @include flexCenter(row, center);
       align-items: start;
       .allImages {
-        @include flexCenter(column, center);
-        margin-right: 1rem;
+        @include flexCenter(row, center);
+        align-items: start;
+
+        .imagesGallery {
+          display: grid;
+          gap: 1rem;
+
+          .catalogImage {
+            background-color: rgba($primary-color, 0.9);
+          }
+        }
+
+        .currentImage {
+          background-color: rgba($primary-color, 0.9);
+          margin-left: 1rem;
+        }
 
         .catalogImage {
           cursor: pointer;

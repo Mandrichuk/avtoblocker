@@ -83,7 +83,13 @@ export type CatalogContent = {
   button: Button;
 };
 
+type Gallery = {
+  image: string;
+  id: number;
+};
+
 export type Catalog = {
+  imagesGallery: Gallery[];
   ru: CatalogContent;
   en: CatalogContent;
   sk?: CatalogContent;
