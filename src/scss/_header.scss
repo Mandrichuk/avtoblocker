@@ -19,48 +19,72 @@ header {
     .logo {
       font-weight: weight("bold");
       font-size: size("subtitle");
-    }
-
-    .burger-menu {
-      position: absolute;
-      right: 0;
-      width: 32px;
-      height: 3px;
-      background-color: set-text-color($primary-color);
-      transition: transition("normal");
-      cursor: pointer;
-
-      &::before {
-        position: absolute;
-        content: "";
-        top: -8px;
-        width: 32px;
-        height: 3px;
-        background-color: set-text-color($primary-color);
-        transition: transition("normal");
-      }
-
-      &::after {
-        position: absolute;
-        content: "";
-        top: 8px;
-        width: 25px;
-        height: 3px;
-        background-color: set-text-color($primary-color);
-        transition: transition("normal");
-      }
+      z-index: 10;
 
       &.open {
-        transform: rotate(360deg);
         background-color: transparent;
+        position: fixed;
 
-        &::before {
-          transform: rotate(45deg) translate(5px, 8px);
-        }
+        left: 2rem;
+        right: 3rem;
+      }
+    }
 
-        &::after {
+    .burger-menu-container {
+      @include flexCenter(row, center);
+      height: 30px;
+      width: 30px;
+
+      .burger-menu-wrapper {
+        padding: 30px;
+        cursor: pointer;
+        background-color: inherit;
+        .burger-menu {
+          position: absolute;
+          z-index: 10;
+          right: 0;
           width: 32px;
-          transform: rotate(-45deg) translate(3px, -7px);
+          height: 3px;
+          background-color: set-text-color($primary-color);
+          transition: transition("normal");
+
+          &::before {
+            position: absolute;
+            content: "";
+            top: -8px;
+            width: 32px;
+            height: 3px;
+            background-color: set-text-color($primary-color);
+            transition: transition("normal");
+          }
+
+          &::after {
+            position: absolute;
+            content: "";
+            top: 8px;
+            width: 25px;
+            height: 3px;
+            background-color: set-text-color($primary-color);
+            transition: transition("normal");
+          }
+
+          &.open {
+            transform: rotate(360deg);
+            background-color: transparent;
+            position: fixed;
+
+            top: 2rem;
+            right: 3rem;
+
+            &::before {
+              transform: rotate(45deg) translate(5px, 8px);
+            }
+
+            &::after {
+              width: 32px;
+              transform: rotate(-45deg) translate(3px, -7px);
+            }
+          }
         }
       }
     }

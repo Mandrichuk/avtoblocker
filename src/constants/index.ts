@@ -10,6 +10,7 @@ import buttonOFF from "../assets/buttonOFF.png";
 import vectorCar from "../assets/vectorCar.png";
 
 import {
+  type Sosials,
   type Header,
   type About,
   type Benefits,
@@ -28,6 +29,25 @@ export default {
   buttonOFF,
   vectorCar,
 };
+
+export const sosialsText: Sosials = [
+  {
+    icon: FaFacebookSquare,
+    path: "https://www.facebook.com/",
+  },
+  {
+    icon: FaWhatsappSquare,
+    path: "https://wa.me/",
+  },
+  {
+    icon: SiTelegram,
+    path: "https://t.me/",
+  },
+  {
+    icon: FaInstagramSquare,
+    path: "https://www.instagram.com/",
+  },
+];
 
 export const headerText: Header = {
   ru: {
@@ -300,14 +320,16 @@ export const howItWorksText: HowItWorks = {
     subtitle: "Какие преимущества имеют системы управления BLOCKER:",
     article:
       "BLOCKER представляет собой мощную электронно-механическую блокировку - это высокопрочный стальной цилиндр с телескопически выдвигающимся корпусом и встроенной платой управления. При этом сам узел механической блокировки является энергонезависимым. Питание потребуется только в момент включения или выключения устройства.",
-    description: "Данная система позволяет блокировать основные подвижные узлы автомобиля, связанные с его управлением – педали тормоза и сцепления.",
+    description:
+      "Данная система позволяет блокировать основные подвижные узлы автомобиля, связанные с его управлением – педали тормоза и сцепления.",
   },
   en: {
     title: "How BLOCKER works",
     subtitle: "What are the advantages of BLOCKER control systems:",
     article:
       "BLOCKER is a powerful electronic-mechanical locking device - it is a high-strength steel cylinder with a telescopically retractable housing and a built-in control board. Moreover, the mechanical locking unit itself is non-volatile. Power is required only when the device is turned on or off.",
-    description: "This system allows you to lock the main moving nodes of the car, associated with its control - brake pedal and steering linkage.",
+    description:
+      "This system allows you to lock the main moving nodes of the car, associated with its control - brake pedal and steering linkage.",
   },
 };
 
@@ -461,7 +483,7 @@ export const footerText: Footer = {
       },
       {
         image: "detailsImage",
-        detail: "(067) 593-11-89 | (066) 442-22-67",
+        detail: "(067) 000-0-000 | (066) 000-0-000",
       },
     ],
   },

@@ -1,3 +1,10 @@
+type Sosial = {
+  icon: React.ElementType;
+  path: string;
+};
+
+export type Sosials = Sosial[];
+
 export type NavItem = {
   name: string;
   path: string;
@@ -30,7 +37,7 @@ type HeaderContent = {
 export type Header = {
   ru: HeaderContent;
   en: HeaderContent;
-  sk?: HeaderContent; 
+  sk?: HeaderContent;
 };
 
 type AboutContent = {
@@ -44,7 +51,7 @@ type AboutContent = {
 export type About = {
   ru: AboutContent;
   en: AboutContent;
-  sk?: HeaderContent; 
+  sk?: HeaderContent;
 };
 
 type Benefit = {
@@ -63,9 +70,8 @@ type BenefitsContent = {
 export type Benefits = {
   ru: BenefitsContent;
   en: BenefitsContent;
-  sk?: HeaderContent; 
+  sk?: HeaderContent;
 };
-
 
 export type CatalogContent = {
   title: string;
@@ -75,13 +81,13 @@ export type CatalogContent = {
   kit: string[];
   bgImage: string;
   button: Button;
-}
+};
 
 export type Catalog = {
   ru: CatalogContent;
   en: CatalogContent;
-  sk?:CatalogContent; 
-}
+  sk?: CatalogContent;
+};
 
 type BlockerArticle = {
   image?: string;
@@ -104,7 +110,7 @@ type ManagmentContent = {
 export type Managment = {
   ru: ManagmentContent;
   en: ManagmentContent;
-  sk?: HeaderContent; 
+  sk?: HeaderContent;
 };
 
 type HowItWorksContent = {
@@ -117,7 +123,7 @@ type HowItWorksContent = {
 export type HowItWorks = {
   ru: HowItWorksContent;
   en: HowItWorksContent;
-  sk?: HeaderContent; 
+  sk?: HeaderContent;
 };
 
 type Advantage = {
@@ -135,7 +141,7 @@ type AdvantagesContent = {
 export type Advantages = {
   ru: AdvantagesContent;
   en: AdvantagesContent;
-  sk?: HeaderContent; 
+  sk?: HeaderContent;
 };
 
 export type Input = {
@@ -162,7 +168,7 @@ type OrderContent = {
 export type Order = {
   ru: OrderContent;
   en: OrderContent;
-  sk?: HeaderContent; 
+  sk?: HeaderContent;
 };
 
 type SocialLink = {
@@ -185,5 +191,5 @@ type FooterContent = {
 export type Footer = {
   ru: FooterContent;
   en: FooterContent;
-  sk?: HeaderContent; 
+  sk?: HeaderContent;
 };

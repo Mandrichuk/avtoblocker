@@ -28,6 +28,57 @@
 }
 
 @include media-lg {
+  header {
+    padding-top: 60%;
+    nav {
+      .burger-menu-container {
+        .screen-nav-block {
+          @include flexCenter(column, center);
+          position: relative;
+          font-size: size("title");
+          z-index: 9;
+          position: fixed;
+          top: 0;
+          left: 0;
+          height: 100vh;
+
+          width: 100vw;
+          background-color: $primary-color;
+          opacity: 0.97;
+          visibility: hidden;
+
+          ul {
+            @include flexCenter(column, center);
+            @include setFont("Poppins", 300);
+            gap: 2rem;
+          }
+
+          &.open {
+            visibility: visible;
+
+            .contactData {
+              font-size: size("article");
+              position: fixed;
+              bottom: 4rem;
+              left: 2rem;
+            }
+
+            .sosials {
+              font-size: size("title");
+              position: fixed;
+              bottom: 1rem;
+              left: 2rem;
+
+              a {
+                margin-right: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   .catalogSection {
     .wrapper {
       .fullCatalog {
@@ -60,10 +111,6 @@
 }
 
 @include media-md {
-  header {
-    padding-top: 60%;
-  }
-
   .aboutSection {
     @include flexCenter(column, space-between);
 
@@ -239,6 +286,45 @@
 
         .article {
           margin: 1.5rem 0;
+        }
+      }
+    }
+  }
+
+  footer {
+    background-color: black;
+    width: 100%;
+
+    .details {
+      @include flexCenter(column, center);
+      align-items: center;
+      padding: 3rem 3rem;
+      color: set-text-color($primary-color);
+
+      .contacts {
+        margin-top: 3rem;
+      }
+
+      .title {
+        @include setFont("Poppins", 600);
+        font-size: size("title");
+        margin-bottom: 1.5rem;
+      }
+
+      .personalData {
+        margin-right: 0;
+        display: grid;
+        gap: 1rem;
+        p {
+          max-width: none;
+        }
+      }
+
+      .contacts {
+        .sosials {
+          @include flexCenter(row, start);
+          gap: 1rem;
+          font-size: size("label");
         }
       }
     }
