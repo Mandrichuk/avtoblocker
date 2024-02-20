@@ -48,7 +48,9 @@ function Catalog({ lang }: CatalogProps) {
                 </div>
               ))}
             </div>
-            <Button>{catalogTextData.button.name}</Button>
+            <Button link={`#${navigationsText.order.id}`}>
+              {catalogTextData.button.name}
+            </Button>
           </div>
         </div>
       </div>

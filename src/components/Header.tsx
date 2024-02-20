@@ -116,7 +116,7 @@ function Header({ changeLang, lang }: HeaderProps) {
         <p className="subtitle">{toUpperCase(headerTextData.subtitle)}</p>
         <p className="article">{headerTextData.article}</p>
         <div>
-          <Button>{headerTextData.button.name}</Button>
+          <Button link={`#${navigationsText.order.id}`} >{headerTextData.button.name}</Button>
         </div>
       </div>
     </header>

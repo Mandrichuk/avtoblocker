@@ -164,6 +164,7 @@
           .icon {
             margin-right: 1.5rem;
             margin-bottom: 0.5rem;
+            max-width: 50px;
           }
         }
       }
@@ -187,6 +188,7 @@
 
     .advantagesGrid {
       grid-template-columns: 1fr;
+      gap: 2rem;
     }
   }
 }
@@ -275,6 +277,7 @@
           .icon {
             margin-right: 1rem;
             width: 150px;
+            max-width: 40px;
           }
         }
       }
@@ -404,12 +407,12 @@
 
         .article {
           margin: 1.5rem 0;
-          @include flexCenter(column, center);
+          @include flexCenter(row, center);
           align-items: start;
 
           .icon {
             margin-right: 1rem;
-            width: 150px;
+            max-width: 60px;
           }
         }
       }

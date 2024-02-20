@@ -8,6 +8,13 @@ import robbery from "../assets/robbery.jpg";
 import buttonON from "../assets/buttonON.png";
 import buttonOFF from "../assets/buttonOFF.png";
 import vectorCar from "../assets/vectorCar.png";
+import battery from "../assets/battery.png";
+import carKey from "../assets/carKey.png";
+import gift from "../assets/gift.png";
+import customKey from "../assets/customKey.png";
+import kettlebell from "../assets/kettlebell.png";
+import key from "../assets/key.png";
+import touch from "../assets/touch.png";
 
 import {
   type Sosials,
@@ -29,6 +36,13 @@ export default {
   buttonON,
   buttonOFF,
   vectorCar,
+  battery,
+  carKey,
+  gift,
+  customKey,
+  kettlebell,
+  key,
+  touch,
 };
 
 export const navigationsText: Navigations = {
@@ -344,17 +358,17 @@ export const managementText: Managment = {
       title: "Для активации БЛОКЕРА – существует несколько способов:",
       articles: [
         {
-          image: "articleImage",
+          image: key,
           article:
             "Ключ-метка BLOCKER. Достаточно поднести электронный ключ БЛОКЕРА к считывателю, установленному в салоне автомобиля. Ключи работают БЕЗ батареек.",
         },
         {
-          image: "articleImage",
+          image: carKey,
           article:
             "Автомобильный ключ. Выходя из машины, можно воспользоваться штатным автомобильным ключом или брелоком сигнализации, просто нажав на кнопку – БЛОКЕР активируется автоматически.",
         },
         {
-          image: "articleImage",
+          image: customKey,
           article:
             "Кнопка VALET. В случае потери ключа целесообразно воспользоваться сервисной кнопкой – после ввода собственного ПИН-кода пользователь без труда сможет управлять системой.",
         },
@@ -364,7 +378,7 @@ export const managementText: Managment = {
       image: "inactiveBlocker",
       articles: [
         {
-          image: "articleImage",
+          image: touch,
           article:
             "Разблокирование системы осуществляется только контактным способом – при помощи ключа-метки BLOCKER или кнопки Valet. Это сделано из соображений безопасности автомобиля – попыток интеллектуального угона.",
         },
@@ -379,17 +393,17 @@ export const managementText: Managment = {
       title: "To activate the BLOCKER, there are several ways:",
       articles: [
         {
-          image: "articleImage",
+          image: key,
           article:
             "The key-tag BLOCKER. It is enough to bring an electronic key BLOCKER to the reader, installed in the car salon. The keys work without batteries.",
         },
         {
-          image: "articleImage",
+          image: carKey,
           article:
             "The car-key. When leaving the car, you can use the car-key or the lock signal, just press the button – the BLOCKER activates automatically.",
         },
         {
-          image: "articleImage",
+          image: customKey,
           article:
             "The service button. In case of lost key, it is best to use the service button – after entering your own PIN code, the user without effort can control the system.",
         },
@@ -399,7 +413,7 @@ export const managementText: Managment = {
       image: "inactiveBlocker",
       articles: [
         {
-          image: "articleImage",
+          image: touch,
           article:
             "The system can be unlocked only by contact. The key-tag BLOCKER or the service button are used to unlock the system.",
         },

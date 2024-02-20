@@ -24,4 +24,5 @@ export interface FooterProps extends Language {}
 
 export interface ButtonProps {
   children: string;
+  link: string;
 }

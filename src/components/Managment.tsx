@@ -28,7 +28,7 @@ function Managment({ lang }: ManagementProps) {
               managementTextData.activeBlocker.articles.map(
                 (article, index) => (
                   <div key={`article-${index}`} className="article">
-                    <img className="icon" src={""} alt="robbery" />
+                    <img className="icon" src={article.image} alt="robbery" />
                     <p>{article.article}</p>
                   </div>
                 )

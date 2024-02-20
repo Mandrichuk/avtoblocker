@@ -31,12 +31,6 @@ function Advantages({ lang }: AdvantagesProps) {
             </div>
           ))}
       </div>
-      <div className="buttonContainer">
-        <button className="button accent">
-          {" "}
-          {advantagesTextData.button.name}{" "}
-        </button>
-      </div>
     </section>
   );
 }

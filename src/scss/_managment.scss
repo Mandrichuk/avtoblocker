@@ -32,12 +32,14 @@
       }
 
       .article {
-        margin: 1.5rem 0;
+        margin: 3rem 0;
         @include flexCenter(row, center);
         align-items: start;
 
         .icon {
           margin-right: 2rem;
+          max-width: 100px;
+          object-fit: cover;
         }
       }
     }
