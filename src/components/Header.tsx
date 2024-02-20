@@ -11,6 +11,44 @@ import { useWindowWidth } from "../utils/useWindowWidth";
 
 import Button from "./Button";
 
+function Nav({ lang }: HeaderProps) {
+  return (
+    <>
+      <a href={`#${navigationsText.header.id}`}>
+        {navigationsText.header.include && navigationsText.header[lang]?.name}
+      </a>
+      <a href={`#${navigationsText.about.id}`}>
+        {navigationsText.about.include && navigationsText.about[lang]?.name}
+      </a>
+      <a href={`#${navigationsText.advantages.id}`}>
+        {navigationsText.advantages.include &&
+          navigationsText.advantages[lang]?.name}
+      </a>
+      <a href={`#${navigationsText.catalog.id}`}>
+        {navigationsText.catalog.include && navigationsText.catalog[lang]?.name}
+      </a>
+      <a href={`#${navigationsText.managment.id}`}>
+        {navigationsText.managment.include &&
+          navigationsText.managment[lang]?.name}
+      </a>
+      <a href={`#${navigationsText.howItWorks.id}`}>
+        {navigationsText.howItWorks.include &&
+          navigationsText.howItWorks[lang]?.name}
+      </a>
+      <a href={`#${navigationsText.benefits.id}`}>
+        {navigationsText.benefits.include &&
+          navigationsText.benefits[lang]?.name}
+      </a>
+      <a href={`#${navigationsText.order.id}`}>
+        {navigationsText.order.include && navigationsText.order[lang]?.name}
+      </a>
+      <a href={`#${navigationsText.footer.id}`}>
+        {navigationsText.footer.include && navigationsText.footer[lang]?.name}
+      </a>
+    </>
+  );
+}
+
 function Header({ changeLang, lang }: HeaderProps) {
   const headerTextData = headerText[lang] || headerText["en"];
   const windowWidth = useWindowWidth();
@@ -26,11 +64,8 @@ function Header({ changeLang, lang }: HeaderProps) {
             <div className="nav-block">
               <ul>
                 <p className="phone">+380000000000</p>
-                <Link to={""}>Link</Link>
-                <Link to={""}>Link</Link>
-                <Link to={""}>Link</Link>
-                <Link to={""}>Link</Link>
-                <Link to={""}>Link</Link>
+
+                <Nav lang={lang || "en"} changeLang={changeLang} />
               </ul>
             </div>
             <div className="languages">
@@ -54,11 +89,7 @@ function Header({ changeLang, lang }: HeaderProps) {
               <div className={`burger-menu ${open && "open"}`} />
               <div className={`screen-nav-block ${open && "open"}`}>
                 <ul>
-                  <Link to={""}>Link</Link>
-                  <Link to={""}>Link</Link>
-                  <Link to={""}>Link</Link>
-                  <Link to={""}>Link</Link>
-                  <Link to={""}>Link</Link>
+                  <Nav lang={lang || "en"} changeLang={changeLang} />
                 </ul>
                 <div className="contactData">
                   <p className="phone">+380000000000</p>

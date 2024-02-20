@@ -201,6 +201,7 @@ type LanguageItem = {
 type NavigationItem = {
   ru: LanguageItem;
   en: LanguageItem;
+  sk?: LanguageItem;
   id: string;
   include: boolean;
 };
