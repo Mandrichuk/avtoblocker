@@ -216,3 +216,13 @@ export type OrderInputs = {
   phoneNumber: string;
   email: string;
 }
+
+export type inputAlertContent = {
+  alert: string;
+}
+
+export type inputAlert = {
+  en: inputAlertContent;
+  ru: inputAlertContent;
+  sk?: inputAlertContent;
+}

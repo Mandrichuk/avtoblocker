@@ -1,12 +1,28 @@
-input[type="text"], input[type="email"] {
+input[type="text"],
+input[type="email"] {
   width: 100%;
   @include setFont("Poppins", 300);
   font-size: size("article");
   background: transparent;
-  border: none; 
-  border-bottom: 2px solid rgb(215, 215, 215); 
+  border: none;
+  border-bottom: 2px solid rgb(215, 215, 215);
   outline: none;
   padding: 0.7rem;
-  color: set-text-color($primary-color); 
+  color: set-text-color($primary-color);
   padding-bottom: 0;
+}
+
+.inputSection {
+  margin-bottom: 0.3rem;
+  width: 100%;
+
+  input {
+    width: 100%;
+  }
+
+  label {
+    margin-bottom: 0.3rem;
+    font-size: 0.7rem;
+    color: $secondary-color;
+  }
 }

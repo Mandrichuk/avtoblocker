@@ -15,6 +15,7 @@ import { toUpperCase } from "../utils/toUpperCase";
 function Order({ lang }: OrderProps) {
   const orderTextData = orderText[lang] || orderText["en"];
   const [loading, setLoading] = useState(false);
+  const [activeError, setActiveError] = useState(false);
   const [form, setForm] = useState<OrderInputs>({
     name: "",
     surname: "",
@@ -31,41 +32,57 @@ function Order({ lang }: OrderProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
 
-    emailjs
-      .send(
-        "service_67gp3xk",
-        "template_2mjltnq",
-        {
-          from_name: form.name,
-          to_name: "Andrew Mandrichuk",
-          from_email: form.email,
-          to_email: "andrew.mandrichuk2007@gmail.com",
-          phone_number: form.phoneNumber,
-        },
-        "O_emiMG-zC22X_eF2"
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you! I will get back to you as soon as possible.");
+    if (isFormValid()) {
+      setLoading(true);
 
-          setForm({
-            name: "",
-            surname: "",
-            phoneNumber: "",
-            email: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.log(error);
+      emailjs
+        .send(
+          "service_67gp3xk",
+          "template_2mjltnq",
+          {
+            from_name: form.name,
+            to_name: "Andrew Mandrichuk",
+            from_email: form.email,
+            to_email: "andrew.mandrichuk2007@gmail.com",
+            phone_number: form.phoneNumber,
+          },
+          "O_emiMG-zC22X_eF2"
+        )
+        .then(
+          () => {
+            setLoading(false);
+            alert("Thank you! I will get back to you as soon as possible.");
 
-          alert("Something went wrong.");
-        }
-      );
+            setForm({
+              name: "",
+              surname: "",
+              phoneNumber: "",
+              email: "",
+            });
+          },
+          (error) => {
+            setLoading(false);
+            console.log(error);
+
+            alert("Something went wrong.");
+          }
+        );
+    }
   };
+
+  function isFormValid(): boolean {
+    if (
+      form.name.length === 0 &&
+      form.surname.length === 0 &&
+      form.phoneNumber.length === 0 &&
+      form.email.length === 0
+    ) {
+      setActiveError(true);
+      return false;
+    }
+    return true;
+  }
 
   return (
     <section className="orderSection" id={navigationsText.order.id}>
@@ -78,6 +95,8 @@ function Order({ lang }: OrderProps) {
             <div className="namesInputs">
               {"inputs" in orderTextData && (
                 <Input
+                  error={form.name.length === 0 && activeError}
+                  lang={lang}
                   type={orderTextData.inputs.nameInput.type}
                   placeholder={orderTextData.inputs.nameInput.placeholder}
                   field={orderTextData.inputs.nameInput.field}
@@ -86,6 +105,8 @@ function Order({ lang }: OrderProps) {
               )}
               {"inputs" in orderTextData && (
                 <Input
+                  error={form.surname.length === 0 && activeError}
+                  lang={lang}
                   type={orderTextData.inputs.surnameInput.type}
                   placeholder={orderTextData.inputs.surnameInput.placeholder}
                   field={orderTextData.inputs.surnameInput.field}
@@ -95,6 +116,8 @@ function Order({ lang }: OrderProps) {
             </div>
             {"inputs" in orderTextData && (
               <Input
+                error={form.phoneNumber.length === 0 && activeError}
+                lang={lang}
                 type={orderTextData.inputs.phoneNumberInput.type}
                 placeholder={orderTextData.inputs.phoneNumberInput.placeholder}
                 field={orderTextData.inputs.phoneNumberInput.field}
@@ -103,6 +126,8 @@ function Order({ lang }: OrderProps) {
             )}
             {"inputs" in orderTextData && (
               <Input
+                error={form.email.length === 0 && activeError}
+                lang={lang}
                 type={orderTextData.inputs.emailInput.type}
                 placeholder={orderTextData.inputs.emailInput.placeholder}
                 field={orderTextData.inputs.emailInput.field}

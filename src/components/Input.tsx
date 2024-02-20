@@ -2,7 +2,17 @@ import React, { useState, useEffect } from "react";
 
 import { InputProps } from "../lib/interfaces";
 
-function Input({ type, placeholder, field, getValue }: InputProps) {
+import { inputAlertText } from "../constants";
+
+function Input({
+  type,
+  placeholder,
+  field,
+  lang,
+  error,
+  getValue,
+}: InputProps) {
+  const inputAlertTextData = inputAlertText[lang] || inputAlertText["en"];
   const [text, setText] = useState("");
 
   function changeText(e: React.ChangeEvent<HTMLInputElement>) {
@@ -13,7 +23,12 @@ function Input({ type, placeholder, field, getValue }: InputProps) {
     getValue(field, text);
   }, [text]);
 
-  return <input onChange={changeText} type={type} placeholder={placeholder} />;
+  return (
+    <section className="inputSection">
+      <input onChange={changeText} type={type} placeholder={placeholder} />
+      {error && <label>{inputAlertTextData.alert}</label>}
+    </section>
+  );
 }
 
 export default Input;

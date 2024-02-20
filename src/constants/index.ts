@@ -28,6 +28,7 @@ import {
   type Order,
   type Footer,
   type Navigations,
+  type inputAlert,
 } from "../lib/types";
 
 export default {
@@ -44,6 +45,15 @@ export default {
   key,
   touch,
 };
+
+export const inputAlertText: inputAlert = {
+  ru: {
+    alert: "*Заполните поле", 
+  }, 
+  en: {
+    alert: "*Fill the field",
+  },
+}
 
 export const navigationsText: Navigations = {
   header: {

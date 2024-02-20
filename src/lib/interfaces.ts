@@ -28,6 +28,8 @@ export interface ButtonProps {
 }
 
 export interface InputProps {
+  error: boolean;
+  lang: "ru" | "en" | "sk";
   type: string;
   placeholder: string;
   field: string;
