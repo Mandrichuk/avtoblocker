@@ -14,37 +14,52 @@ import Button from "./Button";
 function Nav({ lang }: HeaderProps) {
   return (
     <>
-      <a href={`#${navigationsText.header.id}`}>
-        {navigationsText.header.include && navigationsText.header[lang]?.name}
-      </a>
-      <a href={`#${navigationsText.about.id}`}>
-        {navigationsText.about.include && navigationsText.about[lang]?.name}
-      </a>
-      <a href={`#${navigationsText.advantages.id}`}>
-        {navigationsText.advantages.include &&
-          navigationsText.advantages[lang]?.name}
-      </a>
-      <a href={`#${navigationsText.catalog.id}`}>
-        {navigationsText.catalog.include && navigationsText.catalog[lang]?.name}
-      </a>
-      <a href={`#${navigationsText.managment.id}`}>
-        {navigationsText.managment.include &&
-          navigationsText.managment[lang]?.name}
-      </a>
-      <a href={`#${navigationsText.howItWorks.id}`}>
-        {navigationsText.howItWorks.include &&
-          navigationsText.howItWorks[lang]?.name}
-      </a>
-      <a href={`#${navigationsText.benefits.id}`}>
-        {navigationsText.benefits.include &&
-          navigationsText.benefits[lang]?.name}
-      </a>
-      <a href={`#${navigationsText.order.id}`}>
-        {navigationsText.order.include && navigationsText.order[lang]?.name}
-      </a>
-      <a href={`#${navigationsText.footer.id}`}>
-        {navigationsText.footer.include && navigationsText.footer[lang]?.name}
-      </a>
+      {navigationsText.header.include && (
+        <a href={`#${navigationsText.header.id}`}>
+          {navigationsText.header[lang]?.name}
+        </a>
+      )}
+      {navigationsText.about.include && (
+        <a href={`#${navigationsText.about.id}`}>
+          {navigationsText.about[lang]?.name}
+        </a>
+      )}
+
+      {navigationsText.advantages.include && (
+        <a href={`#${navigationsText.advantages.id}`}>
+          {navigationsText.advantages[lang]?.name}
+        </a>
+      )}
+
+      {navigationsText.catalog.include && (
+        <a href={`#${navigationsText.catalog.id}`}>
+          {navigationsText.catalog[lang]?.name}
+        </a>
+      )}
+
+      {navigationsText.howItWorks.include && (
+        <a href={`#${navigationsText.howItWorks.id}`}>
+          {navigationsText.howItWorks[lang]?.name}
+        </a>
+      )}
+
+      {navigationsText.order.include && (
+        <a href={`#${navigationsText.order.id}`}>
+          {navigationsText.order[lang]?.name}
+        </a>
+      )}
+
+      {navigationsText.benefits.include && (
+        <a href={`#${navigationsText.benefits.id}`}>
+          {navigationsText.benefits[lang]?.name}
+        </a>
+      )}
+
+      {navigationsText.footer.include && (
+        <a href={`#${navigationsText.footer.id}`}>
+          {navigationsText.footer[lang]?.name}
+        </a>
+      )}
     </>
   );
 }
@@ -59,7 +74,7 @@ function Header({ changeLang, lang }: HeaderProps) {
       <nav>
         {/* <img src="" alt="" /> */}
         <p className={`logo ${open && "open"}`}>Logo</p>
-        {windowWidth > 1250 ? (
+        {windowWidth > 1024 ? (
           <>
             <div className="nav-block">
               <ul>
@@ -116,7 +131,9 @@ function Header({ changeLang, lang }: HeaderProps) {
         <p className="subtitle">{toUpperCase(headerTextData.subtitle)}</p>
         <p className="article">{headerTextData.article}</p>
         <div>
-          <Button link={`#${navigationsText.order.id}`} >{headerTextData.button.name}</Button>
+          <Button link={`#${navigationsText.order.id}`}>
+            {headerTextData.button.name}
+          </Button>
         </div>
       </div>
     </header>

@@ -93,16 +93,16 @@ header {
       @include flexCenter(row, center);
       justify-content: space-between;
       width: 100%;
-      font-size: size("article");
+      font-size: size("nav");
 
       ul {
         @include flexCenter(row, center);
-        margin: 0 100px;
+        margin: 0 50px;
         flex: 1;
 
         .phone {
           @include setFont("Poppins", 600);
-          margin-right: 100px;
+          margin-right: 50px;
         }
 
         a {
