@@ -25,9 +25,43 @@
       }
     }
   }
+
+  .managmentSection {
+    .wrapper {
+      .imageContiner {
+        visibility: visible;
+        @include flexCenter(row, end);
+        position: absolute;
+        bottom: -12rem;
+        right: 0;
+
+        img {
+          width: 60%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
 }
 
 @include media-lg {
+  .managmentSection {
+    .wrapper {
+      .imageContiner {
+        visibility: visible;
+        @include flexCenter(row, end);
+        position: absolute;
+        bottom: -8rem;
+        right: 0;
+
+        img {
+          width: 50%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
   .catalogSection {
     .wrapper {
       .fullCatalog {
@@ -120,6 +154,9 @@
 
   .aboutSection {
     @include flexCenter(column, space-between);
+    .textSection {
+      margin-right: 0;
+    }
 
     .imgSection {
       flex: 0.75;
@@ -185,6 +222,19 @@
           margin: 2rem 0;
         }
       }
+
+      .imageContiner {
+        visibility: hidden;
+        @include flexCenter(row, end);
+        position: absolute;
+        bottom: -10rem;
+        right: 0;
+
+        img {
+          width: 60%;
+          object-fit: cover;
+        }
+      }
     }
   }
 
@@ -202,6 +252,50 @@
           img {
             max-width: 60px;
             object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+
+  .managmentSection {
+    .wrapper {
+      @include flexCenter(row, center);
+      margin-bottom: 0;
+      .imageContiner {
+        display: none;
+        visibility: hidden;
+      }
+
+      .details {
+        @include flexCenter(column, space-between);
+        gap: 2rem;
+
+        .on {
+          img {
+            max-width: 60%;
+          }
+          .subtitle {
+            @include setFont("Poppins", 600);
+            font-size: size("subtitle");
+            margin: 1rem 0;
+          }
+
+          .article {
+            margin: 2rem 0;
+            @include flexCenter(row, center);
+            align-items: start;
+
+            .icon {
+              margin-right: 2rem;
+              max-width: 40px;
+              object-fit: cover;
+            }
+          }
+        }
+        .off {
+          img {
+            max-width: 60%;
           }
         }
       }

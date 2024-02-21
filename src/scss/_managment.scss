@@ -1,56 +1,73 @@
 .managmentSection {
   @include flexCenter(column, center);
-  @include sectionMargin;
+  width: 100%;
+  position: relative;
   margin-bottom: 0;
-  
-  .title {
-    @include setFont("Poppins", 600);
-    font-size: size("title");
-    margin-bottom: 3rem;
-  }
+  .wrapper {
+    @include flexCenter(column, center);
+    @include sectionMargin;
+    .title {
+      @include setFont("Poppins", 600);
+      font-size: size("title");
+      margin-bottom: 3rem;
+    }
 
-  .subtitle {
-    @include setFont("Poppins", 300);
-    font-size: size("subtitle");
-    margin-bottom: 2rem;
-  }
+    .subtitle {
+      @include setFont("Poppins", 300);
+      font-size: size("subtitle");
+      margin-bottom: 2rem;
+    }
 
-  .details {
-    @include flexCenter(row, space-between);
-    align-items: start;
-    gap: 10rem;
+    .details {
+      @include flexCenter(row, space-between);
+      align-items: start;
+      gap: 10rem;
 
-    .on {
-      img {
-        width: 100%;
+      .on {
+        img {
+          width: 100%;
+        }
+
+        .subtitle {
+          @include setFont("Poppins", 600);
+          font-size: size("subtitle");
+          margin: 3rem 0;
+        }
+
+        .article {
+          margin: 3rem 0;
+          @include flexCenter(row, center);
+          align-items: start;
+
+          .icon {
+            margin-right: 2rem;
+            max-width: 80px;
+            object-fit: cover;
+          }
+        }
       }
 
-      .subtitle {
-        @include setFont("Poppins", 600);
-        font-size: size("subtitle");
-        margin: 3rem 0;
-      }
+      .off {
+        img {
+          width: 100%;
+        }
 
-      .article {
-        margin: 3rem 0;
-        @include flexCenter(row, center);
-        align-items: start;
-
-        .icon {
-          margin-right: 2rem;
-          max-width: 80px;
-          object-fit: cover;
+        .article {
+          margin: 1.5rem 0;
         }
       }
     }
 
-    .off {
-      img {
-        width: 100%;
-      }
+    .imageContiner {
+      visibility: visible;
+      @include flexCenter(row, end);
+      position: absolute;
+      bottom: -18rem;
+      right: 0;
 
-      .article {
-        margin: 1.5rem 0;
+      img {
+        width: 85%;
+        object-fit: cover;
       }
     }
   }

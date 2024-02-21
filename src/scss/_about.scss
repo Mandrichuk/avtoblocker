@@ -3,7 +3,7 @@
   @include sectionMargin;
   .textSection {
     flex: 1.25;
-    // margin-right: 2rem;
+    margin-right: 2rem;
 
     .title {
       @include setFont("Poppins", 600);

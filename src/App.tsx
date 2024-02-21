@@ -14,9 +14,12 @@ import HowItWorks from "./components/HowItWorks";
 
 import images from "./constants/index";
 
+import { useWindowWidth } from "./utils/useWindowWidth";
+
 function Page() {
   // ru, en, sk
   const [lang, setLang] = useState<"en" | "ru" | "sk">("ru");
+  const windowWidth = useWindowWidth();
 
   const changeLang = (newLang: "en" | "ru" | "sk"): void => {
     setLang(newLang);
@@ -31,13 +34,12 @@ function Page() {
       </div>
 
       <Catalog lang={lang} />
-
-      <div className="wrapper">
-        <Managment lang={lang} />
-      </div>
-      <div className="vectorImage">
-        <img src={images.vectorCar} alt="robbery" />
-      </div>
+      <Managment lang={lang} />
+      {windowWidth < 1024 && (
+        <div className="vectorImage">
+          <img src={images.vectorCar} alt="robbery" />
+        </div>
+      )}
       <div className="wrapper">
         <HowItWorks lang={lang} />
         <Advantages lang={lang} />
