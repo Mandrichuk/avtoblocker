@@ -602,15 +602,18 @@ export const footerText: Footer = {
     details: [
       {
         image: "detailsImage",
-        detail: "г. Киев, ул. Киквидзе, 43(Правый берег, Печерский р-н)",
+        firstDetailLine: "г. Киев, ул. Киквидзе, 43",
+        secondDetailLine: "(Правый берег, Печерский р-н)",
       },
       {
         image: "detailsImage",
-        detail: "Пн-Пт с 10-00 до 19-00 Cб-Вс - по договоренности",
+        firstDetailLine: "Пн-Пт с 10-00 до 19-00 ",
+        secondDetailLine: "Cб-Вс - по договоренности",
       },
       {
         image: "detailsImage",
-        detail: "(067) 000-0-000 | (066) 000-0-000",
+        firstDetailLine: "(067) 000-0-000",
+        secondDetailLine: "(066) 000-0-000",
       },
     ],
   },
@@ -638,15 +641,18 @@ export const footerText: Footer = {
     details: [
       {
         image: "detailsImage",
-        detail: "Kyiv, Kikvidze St, 43 (Right Bank, Pechersk District)",
+        firstDetailLine: "Kyiv, Kikvidze St, 43 ",
+        secondDetailLine: "(Right Bank, Pechersk District)",
       },
       {
         image: "detailsImage",
-        detail: "Mon-Fri from 10:00 to 19:00 Sat-Sun - by agreement",
+        firstDetailLine: "Mon-Fri from 10-00 to 19-00",
+        secondDetailLine: "Sun-Sat - on agreement",
       },
       {
         image: "detailsImage",
-        detail: "(067) 593-11-89 | (066) 442-22-67",
+        firstDetailLine: "(067) 000-0-000",
+        secondDetailLine: "(066) 000-0-000",
       },
     ],
   },

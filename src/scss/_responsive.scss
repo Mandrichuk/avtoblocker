@@ -30,6 +30,12 @@
     }
   }
 
+  footer {
+    .details {
+      width: wrapperWidth("xl");
+    }
+  }
+
   .catalogSection {
     .wrapper {
       .fullCatalog {
@@ -72,6 +78,12 @@
 }
 
 @include media-lg {
+
+  footer {
+    .details {
+      width: wrapperWidth("lg");
+    }
+  }
   #root {
     .wrapper {
       width: wrapperWidth("lg");
@@ -140,6 +152,12 @@
 }
 
 @include media-md {
+
+  footer {
+    .details {
+      width: wrapperWidth("md");
+    }
+  }
   #root {
     .wrapper {
       width: wrapperWidth("md");
@@ -371,6 +389,12 @@
 }
 
 @include media-sm {
+  footer {
+    .details {
+      width: wrapperWidth("sm");
+    }
+  }
+
   #root {
     .wrapper {
       width: wrapperWidth("sm");
@@ -517,7 +541,7 @@
     .details {
       @include flexCenter(column, center);
       align-items: center;
-      padding: 3rem 3rem;
+      padding: 3rem 0;
       color: set-text-color($primary-color);
 
       .contacts {

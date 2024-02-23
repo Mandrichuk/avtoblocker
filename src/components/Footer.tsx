@@ -17,7 +17,10 @@ function Footer({ lang }: FooterProps) {
           <div className="personalData">
             {"details" in footerTextData &&
               footerTextData.details.map((detail, index) => (
-                <p key={`detail-${index}`}>{detail.detail}</p>
+                <div key={`detail-${index}`} className="detail">
+                  <p>{detail.firstDetailLine}</p>
+                  <p>{detail.secondDetailLine}</p>
+                </div>
               ))}
           </div>
         </div>
@@ -26,12 +29,14 @@ function Footer({ lang }: FooterProps) {
             <div className="title">{footerTextData.sosialsText}</div>
           )}
           <div className="sosials">
-          {"sosials" in footerTextData &&
-            footerTextData.sosials.map((sosial, index) => (
-              <a href={sosial.path} target="_blank" key={`sosials-${index}`}>{React.createElement(sosial.icon)}</a>
-            ))}
-        </div>
+            {"sosials" in footerTextData &&
+              footerTextData.sosials.map((sosial, index) => (
+                <a href={sosial.path} target="_blank" key={`sosials-${index}`}>
+                  {React.createElement(sosial.icon)}
+                </a>
+              ))}
           </div>
+        </div>
       </div>
     </footer>
   );

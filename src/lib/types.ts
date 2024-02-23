@@ -184,7 +184,8 @@ type SocialLink = {
 
 type Detail = {
   image: string;
-  detail: string;
+  firstDetailLine: string;
+  secondDetailLine: string;
 };
 
 type FooterContent = {
@@ -221,14 +222,14 @@ export type OrderInputs = {
   surname: string;
   phoneNumber: string;
   email: string;
-}
+};
 
 export type inputAlertContent = {
   alert: string;
-}
+};
 
 export type inputAlert = {
   en: inputAlertContent;
   ru: inputAlertContent;
   sk?: inputAlertContent;
-}
+};

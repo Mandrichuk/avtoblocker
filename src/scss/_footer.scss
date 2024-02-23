@@ -1,13 +1,15 @@
 footer {
   background-color: black;
+  @include flexCenter(row, center);
   width: 100%;
   margin-top: 4rem;
 
   .details {
+    width: wrapperWidth("xxl");
     @include flexCenter(row, start);
     align-items: start;
-    max-width: 1500px;
-    padding: 3rem 4rem;
+    max-width: 1800px;
+    padding: 4rem 0;
     color: set-text-color($primary-color);
 
     .data,
@@ -24,7 +26,10 @@ footer {
     .personalData {
       margin-right: 3rem;
       display: grid;
-      gap: 1rem;
+      .detail {
+        margin-bottom: 1rem;
+      }
+
       p {
         max-width: 800px;
       }
