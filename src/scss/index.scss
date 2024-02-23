@@ -29,16 +29,6 @@ a {
   text-decoration: none;
 }
 
-#root {
-  @include flexCenter(column, center);
-  width: 100%;
-
-  .wrapper {
-    @include flexCenter(column, center);
-    width: $wrapper-width;
-  }
-}
-
 .vectorImage {
   width: 100%;
   height: 300px;

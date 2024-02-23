@@ -25,9 +25,9 @@ function Nav({ lang }: HeaderProps) {
         </a>
       )}
 
-      {navigationsText.advantages.include && (
-        <a href={`#${navigationsText.advantages.id}`}>
-          {navigationsText.advantages[lang]?.name}
+      {navigationsText.benefits.include && (
+        <a href={`#${navigationsText.benefits.id}`}>
+          {navigationsText.benefits[lang]?.name}
         </a>
       )}
 
@@ -42,16 +42,20 @@ function Nav({ lang }: HeaderProps) {
           {navigationsText.howItWorks[lang]?.name}
         </a>
       )}
-
-      {navigationsText.order.include && (
-        <a href={`#${navigationsText.order.id}`}>
-          {navigationsText.order[lang]?.name}
+      {navigationsText.managment.include && (
+        <a href={`#${navigationsText.managment.id}`}>
+          {navigationsText.managment[lang]?.name}
         </a>
       )}
 
-      {navigationsText.benefits.include && (
-        <a href={`#${navigationsText.benefits.id}`}>
-          {navigationsText.benefits[lang]?.name}
+      {navigationsText.advantages.include && (
+        <a href={`#${navigationsText.advantages.id}`}>
+          {navigationsText.advantages[lang]?.name}
+        </a>
+      )}
+      {navigationsText.order.include && (
+        <a href={`#${navigationsText.order.id}`}>
+          {navigationsText.order[lang]?.name}
         </a>
       )}
 

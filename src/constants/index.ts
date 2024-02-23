@@ -79,20 +79,20 @@ export const navigationsText: Navigations = {
       name: "О нас",
     },
     en: {
-      name: "",
+      name: "About",
     },
     id: "about",
     include: true,
   },
-  advantages: {
+  benefits: {
     ru: {
       name: "Преимущества",
     },
     en: {
-      name: "Advantages",
+      name: "Benefits",
     },
-    id: "advantages",
     include: true,
+    id: "benefits",
   },
   catalog: {
     ru: {
@@ -124,15 +124,15 @@ export const navigationsText: Navigations = {
     include: false,
     id: "howItWorks",
   },
-  benefits: {
+  advantages: {
     ru: {
       name: "Достоинства",
     },
     en: {
-      name: "Benefits",
+      name: "Advantages",
     },
+    id: "advantages",
     include: true,
-    id: "benefits",
   },
   order: {
     ru: {

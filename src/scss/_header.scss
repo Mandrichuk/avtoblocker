@@ -14,7 +14,7 @@ header {
     @include flexCenter(row, space-between);
     position: absolute;
     top: 15px;
-    width: $wrapper-width;
+    width: wrapperWidth("xl");
 
     .logo {
       font-weight: weight("bold");
@@ -165,7 +165,7 @@ header {
 
     .article {
       font-size: size("article");
-      width: $wrapper-width - 5%;
+      width: wrapperWidth("xl") - 5%;
       text-align: center;
       margin-bottom: 2rem;
     }

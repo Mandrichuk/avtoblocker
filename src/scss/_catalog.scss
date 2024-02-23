@@ -11,7 +11,7 @@
 
   .wrapper {
     @include flexCenter(column, center);
-    width: $wrapper-width;
+    width: wrapperWidth("xl");
   }
 
   .title {

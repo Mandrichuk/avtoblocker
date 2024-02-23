@@ -1,8 +1,14 @@
-$primary-color: #202020;
+$primary-color: #131313;
 $secondary-color: #a50808;
 $darker-gray: #777676;
 $border-radius: 0.1rem;
-$wrapper-width: 90%;
+$wrapper-width: (
+  "sm": 90%,
+  "md": 80%,
+  "lg": 75%,
+  "xl": 70%,
+  "xxl": 65%,
+);
 $weight-fonts: (
   "light": 300,
   "regular": 400,
@@ -10,12 +16,12 @@ $weight-fonts: (
   "bold": 700
 );
 $font-sizes: (
-  "label": clamp(2rem, 4vw, 4rem),
-  "title": clamp(1.8rem, 3vw, 3.5rem),
-  "subtitle": clamp(1.2rem, 1.7vw, 2rem),
-  "article": clamp(1rem, 1.5vw, 1.8rem),
-  "button": clamp(1.2rem, 1.5vw, 1.4rem),
-  "nav": clamp(1rem, 1.2vw, 1.4rem),
+  "label": clamp(2rem, 4vw, 2.7rem),
+  "title": clamp(1.6rem, 3vw, 2.4rem),
+  "subtitle": clamp(1rem, 1.7vw, 1.4rem),
+  "article": clamp(0.9rem, 1.5vw, 1.2rem),
+  "button": clamp(0.9rem, 1.5vw, 1.3rem),
+  "nav": clamp(0.9rem, 1.2vw, 1.1rem),
 );
 $transition-times: (
   "fast": 0.2s,
@@ -26,6 +32,10 @@ $font-families: (
   "Montserrat": Montserrat,
   "Poppins": Poppins
 );
+
+@function wrapperWidth($width-name) {
+  @return map-get($wrapper-width, $width-name);
+}
 
 @function weight($weight-name) {
   @return map-get($weight-fonts, $weight-name);
@@ -89,7 +99,6 @@ $font-families: (
   @media screen and (max-width: 1250px) {
     @content;
   }
-
 }
 
 @mixin media-xl {

@@ -1,6 +1,33 @@
+#root {
+  @include flexCenter(column, center);
+  width: 100%;
+
+  .wrapper {
+    @include flexCenter(column, center);
+    width: wrapperWidth("xxl");
+    max-width: 1800px;
+  }
+}
+
 @include media-xl {
+  #root {
+    .wrapper {
+      width: wrapperWidth("xl");
+    }
+  }
+
+  .catalogSection {
+    .wrapper {
+      width: wrapperWidth("xl");
+    }
+  }
+
   header {
     padding-top: 50%;
+
+    nav {
+      width: wrapperWidth("xl");
+    }
   }
 
   .catalogSection {
@@ -45,6 +72,25 @@
 }
 
 @include media-lg {
+  #root {
+    .wrapper {
+      width: wrapperWidth("lg");
+    }
+  }
+
+  .catalogSection {
+    .wrapper {
+      width: wrapperWidth("lg");
+    }
+  }
+
+  header {
+    padding-top: 50%;
+
+    nav {
+      width: wrapperWidth("lg");
+    }
+  }
   .managmentSection {
     .wrapper {
       .imageContiner {
@@ -94,6 +140,26 @@
 }
 
 @include media-md {
+  #root {
+    .wrapper {
+      width: wrapperWidth("md");
+    }
+  }
+
+  .catalogSection {
+    .wrapper {
+      width: wrapperWidth("md");
+    }
+  }
+
+  header {
+    padding-top: 50%;
+
+    nav {
+      width: wrapperWidth("md");
+    }
+  }
+
   header {
     padding-top: 60%;
     nav {
@@ -117,6 +183,7 @@
             @include flexCenter(column, center);
             @include setFont("Poppins", 300);
             gap: 2rem;
+            margin-bottom: 5rem;
 
             a {
               &:hover {
@@ -304,6 +371,26 @@
 }
 
 @include media-sm {
+  #root {
+    .wrapper {
+      width: wrapperWidth("sm");
+    }
+  }
+
+  .catalogSection {
+    .wrapper {
+      width: wrapperWidth("sm");
+    }
+  }
+
+  header {
+    padding-top: 50%;
+
+    nav {
+      width: wrapperWidth("sm");
+    }
+  }
+
   header {
     padding-top: 110%;
 
