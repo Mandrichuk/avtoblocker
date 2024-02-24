@@ -18,7 +18,7 @@ import { useWindowWidth } from "./utils/useWindowWidth";
 
 function Page() {
   // ru, en, sk
-  const [lang, setLang] = useState<"en" | "ru" | "sk">("ru");
+  const [lang, setLang] = useState<"en" | "ru" | "sk">("en");
   const windowWidth = useWindowWidth();
 
   const changeLang = (newLang: "en" | "ru" | "sk"): void => {

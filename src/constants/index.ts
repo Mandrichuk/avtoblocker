@@ -193,7 +193,7 @@ export const headerText: Header = {
       ru: "Русский",
       en: "English",
     },
-    title: "BLOCKER",
+    title: "AVTOBLOCK",
     subtitle: "Авторская технология безопасности",
     article:
       "Blocker - ориентирована на профессиональную реализацию Ваших индивидуальных пожеланий в направлении комплексного или частичного переоборудования автомобиля. Наша основная специализация - профессиональная защита от угона. Мы позаботимся о безопасности Вашего имущества!",
@@ -222,7 +222,7 @@ export const headerText: Header = {
       ru: "Русский",
       en: "English",
     },
-    title: "BLOCKER",
+    title: "AVTOBLOCK",
     subtitle: "Author's Technology",
     article:
       "Blocker is focused on the professional implementation of your individual wishes in the direction of a complete or partial re-equipment of a car. Our main specialization is professional theft protection. We will take care of the safety of your property!",
@@ -579,7 +579,7 @@ export const orderText: Order = {
 
 export const footerText: Footer = {
   ru: {
-    title: "BLOCKER",
+    title: "AVTOBLOCK",
     sosialsText: "Контакты",
     sosials: [
       {
@@ -618,7 +618,7 @@ export const footerText: Footer = {
     ],
   },
   en: {
-    title: "BLOCKER",
+    title: "AVTOBLOCK",
     sosialsText: "Contacts",
     sosials: [
       {
@@ -627,7 +627,7 @@ export const footerText: Footer = {
       },
       {
         icon: FaWhatsappSquare,
-        path: "https://wa.me/",
+        path: "https://whatsapp.com",
       },
       {
         icon: SiTelegram,

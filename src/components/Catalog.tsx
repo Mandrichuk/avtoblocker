@@ -46,9 +46,9 @@ function Catalog({ lang }: CatalogProps) {
             <div className="article">{catalogTextData.article}</div>
             <div className="benefits">
               {catalogTextData.kit.map((kit, index) => (
-                <div key={`kit-${index}`} className="kit">
+                <li key={`kit-${index}`} className="kit">
                   {kit}
-                </div>
+                </li>
               ))}
             </div>
             <Button link={`#${navigationsText.order.id}`}>
