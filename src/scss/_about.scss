@@ -38,11 +38,12 @@
   }
 
   .imgSection {
-    flex: 0.75;
+    flex: 0.4;
 
     img {
       object-fit: cover;
       width: 100%;
+      max-width: 600px;
     }
   }
 }

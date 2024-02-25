@@ -19,6 +19,8 @@ import blocker1 from "../assets/blocker1.png";
 import blocker2 from "../assets/blocker2.png";
 import blocker3 from "../assets/blocker3.png";
 import blocker4 from "../assets/blocker4.png";
+import thief from "../assets/thief.png";
+import ninja from "../assets/ninja.png";
 
 import {
   type Sosials,
@@ -52,6 +54,8 @@ export default {
   blocker2,
   blocker3,
   blocker4,
+  thief,
+  ninja,
 };
 
 export const inputAlertText: inputAlert = {
@@ -465,8 +469,8 @@ export const advantagesText: Advantages = {
     title: "почему blocker не удобен для угонщиков?",
     advantages: [
       {
-        image: gift,
-        title: "Это сюрприз",
+        image: ninja,
+        title: "Blocker незаметен!",
         article:
           "Блокер незаметен в автомобиле и проявляет себя только в момент угона: при внезапной блокировке системы злодеям не просто понять, почему это произошло и как с этим бороться. ",
       },
@@ -500,8 +504,8 @@ export const advantagesText: Advantages = {
     title: "Why does BLOCKER not work for robbers?",
     advantages: [
       {
-        image: gift,
-        title: "This is a surprise",
+        image: ninja,
+        title: "BLOCKER is invisible!",
         article:
           "The BLOCKER unit is invisible in the car and only in the moment of ignition: in the case of a blocking failure, the authorities do not know why it happened and how to deal with it. ",
       },

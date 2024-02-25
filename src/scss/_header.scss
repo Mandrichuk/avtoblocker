@@ -1,4 +1,5 @@
 header {
+  margin-bottom: 3rem;
   @include flexCenter(row, center);
   position: relative;
   width: 100%;
@@ -143,6 +144,7 @@ header {
   }
 
   .header-content-wrapper {
+    margin-top: 50px;
     @include flexCenter(column, center);
     width: 100%;
     position: absolute;

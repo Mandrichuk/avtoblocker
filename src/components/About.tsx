@@ -23,7 +23,7 @@ function About({ lang }: AboutProps) {
         )}
         {windowWidth < 1024 && (
           <div className="imgSection mobile">
-            <img src={images.robbery} alt="robbery" />
+            <img src={images.thief} alt="robbery" />
             {"secondArticle" in aboutTextData && (
               <p className="lastArticle">{aboutTextData.secondArticle}</p>
             )}
@@ -36,7 +36,7 @@ function About({ lang }: AboutProps) {
 
       {windowWidth > 1024 && (
         <div className="imgSection">
-          <img src={images.robbery} alt="robbery" />
+          <img src={images.thief} alt="robbery" />
         </div>
       )}
     </section>

@@ -26,7 +26,7 @@ function Footer({ lang }: FooterProps) {
         </div>
         <div className="contacts">
           {"sosialsText" in footerTextData && (
-            <div className="title">{footerTextData.sosialsText}</div>
+            <div className="title">{toUpperCase(footerTextData.sosialsText)}</div>
           )}
           <div className="sosials">
             {"sosials" in footerTextData &&

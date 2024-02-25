@@ -39,7 +39,7 @@ footer {
       .sosials {
         @include flexCenter(row, start);
         gap: 1rem;
-        font-size: size("label");
+        font-size: size("title");
       }
     }
   }

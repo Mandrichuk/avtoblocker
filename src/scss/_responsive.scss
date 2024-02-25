@@ -69,7 +69,7 @@
         right: 0;
 
         img {
-          width: 60%;
+          max-width: 40%;
           object-fit: cover;
         }
       }
@@ -269,61 +269,6 @@
     }
   }
 
-  .managmentSection {
-    .details {
-      @include flexCenter(row, space-between);
-      align-items: start;
-      gap: 5rem;
-
-      .on {
-        img {
-          width: 100%;
-        }
-
-        .subtitle {
-          @include setFont("Poppins", 600);
-          font-size: size("subtitle");
-          margin: 2rem 0;
-        }
-
-        .article {
-          margin: 1rem 0;
-          @include flexCenter(column, start);
-          align-items: start;
-
-          .icon {
-            margin-right: 1.5rem;
-            margin-bottom: 0.5rem;
-            max-width: 50px;
-          }
-        }
-      }
-
-      .off {
-        img {
-          width: 100%;
-        }
-
-        .article {
-          margin: 2rem 0;
-        }
-      }
-
-      .imageContiner {
-        visibility: hidden;
-        @include flexCenter(row, end);
-        position: absolute;
-        bottom: -10rem;
-        right: 0;
-
-        img {
-          width: 60%;
-          object-fit: cover;
-        }
-      }
-    }
-  }
-
   .advantagesSection {
     @include sectionMargin;
     @include flexCenter(column, center);
@@ -359,7 +304,7 @@
 
         .on {
           img {
-            max-width: 60%;
+            width: 50%;
           }
           .subtitle {
             @include setFont("Poppins", 600);
@@ -374,14 +319,14 @@
 
             .icon {
               margin-right: 2rem;
-              max-width: 40px;
+              width: 60px;
               object-fit: cover;
             }
           }
         }
         .off {
           img {
-            max-width: 60%;
+            width: 50%;
           }
         }
       }
@@ -640,7 +585,7 @@
       .advantage {
         .icon {
           img {
-            max-width: 60px;
+            max-width: 40px;
             object-fit: cover;
           }
         }
@@ -667,7 +612,7 @@
     .details {
       @include flexCenter(column, space-between);
       align-items: start;
-      gap: 2rem;
+      gap: 1rem;
 
       .on {
         img {
@@ -686,8 +631,8 @@
           align-items: start;
 
           .icon {
-            margin-right: 1rem;
-            max-width: 60px;
+            margin-right: 0;
+            max-width: 40px;
           }
         }
       }
