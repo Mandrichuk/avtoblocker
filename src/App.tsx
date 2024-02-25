@@ -12,6 +12,7 @@ import Order from "./components/Order";
 import Managment from "./components/Managment";
 import HowItWorks from "./components/HowItWorks";
 
+import Title from "./components/Title";
 
 import images from "./constants/index";
 
@@ -29,8 +30,10 @@ function Page() {
 
   return (
     <>
+      
       <ZoomDisable />
       <Header changeLang={changeLang} lang={lang} />
+      <Title>Hello</Title>
       <div className="wrapper">
         <About lang={lang} />
         <Benefits lang={lang} />

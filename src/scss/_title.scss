@@ -1,0 +1,18 @@
+.titleContainer {
+  @include flexCenter(column, center);
+  .title {
+    @include setFont("Poppins", 600);
+    font-size: size("title");
+  }
+
+  .underline {
+    background-color: $secondary-color;
+    width: 0;
+    height: 2px;
+    transition: all 0.5s ease; 
+
+    &.active {
+      width: 110%;
+    }
+  }
+}

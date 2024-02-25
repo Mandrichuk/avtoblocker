@@ -233,3 +233,7 @@ export type inputAlert = {
   ru: inputAlertContent;
   sk?: inputAlertContent;
 };
+
+export type TitleProps = {
+  children: string;
+}
