@@ -9,7 +9,7 @@
   color: set-text-color($primary-color);
   border-radius: $border-radius;
   transition: transition("normal");
-  font-weight: weight("normal");
+  font-weight: weight("bold");
 
   &.accent {
     background-color: $secondary-color;

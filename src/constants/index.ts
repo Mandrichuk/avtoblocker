@@ -196,7 +196,7 @@ export const headerText: Header = {
     title: "AVTOBLOCK",
     subtitle: "Авторская технология безопасности",
     article:
-      "Blocker - ориентирована на профессиональную реализацию Ваших индивидуальных пожеланий в направлении комплексного или частичного переоборудования автомобиля. Наша основная специализация - профессиональная защита от угона. Мы позаботимся о безопасности Вашего имущества!",
+      "Blocker - профессиональная защита от угона вашего авто!",
     button: {
       name: "Заказать блокер",
       path: "/#order",
@@ -225,7 +225,7 @@ export const headerText: Header = {
     title: "AVTOBLOCK",
     subtitle: "Author's Technology",
     article:
-      "Blocker is focused on the professional implementation of your individual wishes in the direction of a complete or partial re-equipment of a car. Our main specialization is professional theft protection. We will take care of the safety of your property!",
+      "Blocker - professional anti-theft protection for your car!",
     button: {
       name: "Order blocker",
       path: "/#order",
@@ -251,7 +251,7 @@ export const aboutText: About = {
     sideImage: "sideImage",
   },
   en: {
-    title: "About",
+    title: "About Us",
     firstArticle:
       "The BLOCKER team was founded by a group of like-minded people in 2005 and specializes in additional car equipment. We are deeply convinced that a car for a modern person - a true connoisseur of high technology - is synonymous with comfort and safety, reflecting and emphasizing the individuality of its owner.",
 

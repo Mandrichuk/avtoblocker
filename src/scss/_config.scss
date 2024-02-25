@@ -4,10 +4,10 @@ $darker-gray: #777676;
 $border-radius: 0.1rem;
 $wrapper-width: (
   "sm": 90%,
-  "md": 80%,
-  "lg": 75%,
-  "xl": 70%,
-  "xxl": 65%,
+  "md": 90%,
+  "lg": 90%,
+  "xl": 90%,
+  "xxl": 90%,
 );
 $weight-fonts: (
   "light": 300,
@@ -16,11 +16,11 @@ $weight-fonts: (
   "bold": 700
 );
 $font-sizes: (
-  "label": clamp(2rem, 4vw, 2.7rem),
-  "title": clamp(1.6rem, 3vw, 2.4rem),
-  "subtitle": clamp(1rem, 1.7vw, 1.4rem),
-  "article": clamp(0.9rem, 1.5vw, 1.2rem),
-  "button": clamp(0.9rem, 1.5vw, 1.3rem),
+  "label": clamp(3rem, 4vw, 4rem),
+  "title": clamp(2rem, 3vw, 2.7rem),
+  "subtitle": clamp(1.3rem, 1.7vw, 1.8rem),
+  "article": clamp(1.1rem, 1.5vw, 1.6rem),
+  "button": clamp(1.1rem, 1.5vw, 1.6rem),
   "nav": clamp(0.9rem, 1.2vw, 1.1rem),
 );
 $transition-times: (

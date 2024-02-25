@@ -142,36 +142,35 @@ header {
     }
   }
 
-  .header-content {
+  .header-content-wrapper {
     @include flexCenter(column, center);
+    width: 100%;
     position: absolute;
-    margin-top: 50px;
     inset: 0;
     z-index: 0;
+    .header-content {
+      @include flexCenter(column, center);
+      align-items: start;
+      width: wrapperWidth("xl");
 
-    .title {
-      @include setFont("Poppins", 600);
-      font-weight: weight("bold");
-      font-size: size("label");
-      margin-bottom: 2.2rem;
-      background-color: $secondary-color;
-      padding: 0.2rem 0.4rem;
-      border-radius: 0.05rem;
-      
-    }
+      .title {
+        @include setFont("Poppins", 600);
+        font-weight: weight("bold");
+        font-size: size("label");
+        border-radius: 0.05rem;
+      }
 
-    .subtitle {
-      @include setFont("Poppins", 600);
-      text-align: center;
-      font-size: size("subtitle");
-      margin-bottom: 2rem;
-    }
+      .subtitle {
+        @include setFont("Poppins", 600);
+        font-size: size("subtitle");
+      }
 
-    .article {
-      font-size: size("article");
-      width: wrapperWidth("xl") - 5%;
-      text-align: center;
-      margin-bottom: 2rem;
+      .article {
+        font-size: size("article");
+        width: wrapperWidth("xl") - 5%;
+        max-width: 800px;
+        margin-bottom: 2rem;
+      }
     }
   }
 }

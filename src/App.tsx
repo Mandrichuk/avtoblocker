@@ -12,9 +12,11 @@ import Order from "./components/Order";
 import Managment from "./components/Managment";
 import HowItWorks from "./components/HowItWorks";
 
+
 import images from "./constants/index";
 
 import { useWindowWidth } from "./utils/useWindowWidth";
+import ZoomDisable from "./utils/ZoomDisable";
 
 function Page() {
   // ru, en, sk
@@ -27,6 +29,7 @@ function Page() {
 
   return (
     <>
+      <ZoomDisable />
       <Header changeLang={changeLang} lang={lang} />
       <div className="wrapper">
         <About lang={lang} />

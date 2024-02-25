@@ -2,10 +2,12 @@ import React from "react";
 
 import { ButtonProps } from "../lib/interfaces";
 
+import { toUpperCase } from "../utils/toUpperCase";
+
 function Button({ children, link }: ButtonProps) {
   return (
     <a href={link}>
-      <button className={`button accent`}>{children}</button>
+      <button className={`button accent`}>{toUpperCase(children)}</button>
     </a>
   );
 }

@@ -130,14 +130,16 @@ function Header({ changeLang, lang }: HeaderProps) {
         )}
       </nav>
 
-      <div className="header-content">
-        <h1 className="title">{headerTextData.title}</h1>
-        <p className="subtitle">{toUpperCase(headerTextData.subtitle)}</p>
-        <p className="article">{headerTextData.article}</p>
-        <div>
-          <Button link={`#${navigationsText.order.id}`}>
-            {headerTextData.button.name}
-          </Button>
+      <div className="header-content-wrapper">
+        <div className="header-content">
+          <p className="subtitle">{toUpperCase(headerTextData.subtitle)}</p>
+          <h1 className="title">{headerTextData.title}</h1>
+          <p className="article">{headerTextData.article}</p>
+          <div>
+            <Button link={`#${navigationsText.order.id}`}>
+              {(headerTextData.button.name)}
+            </Button>
+          </div>
         </div>
       </div>
     </header>

@@ -576,13 +576,12 @@
 
 @include media-mob {
   header {
-    padding-top: 130%;
+    padding-top: 150%;
 
     .header-content {
       .article {
         font-size: size("article");
         width: 96%;
-        text-align: center;
         margin-bottom: 2rem;
       }
     }
