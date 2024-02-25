@@ -9,7 +9,7 @@
     .title {
       @include setFont("Poppins", 600);
       font-size: size("title");
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
     }
 
     .subtitle {
@@ -24,18 +24,20 @@
       gap: 10rem;
 
       .on {
+        flex: 1;
         img {
           width: 100%;
+          max-width: 500px;
         }
 
         .subtitle {
           @include setFont("Poppins", 600);
           font-size: size("subtitle");
-          margin: 3rem 0;
+          margin: 1.5rem 0;
         }
 
         .article {
-          margin: 3rem 0;
+          margin: 2rem 0;
           @include flexCenter(row, center);
           align-items: start;
 
@@ -48,8 +50,10 @@
       }
 
       .off {
+        flex: 1;
         img {
           width: 100%;
+          max-width: 500px;
         }
 
         .article {
