@@ -4,7 +4,7 @@ import images from "../constants/index";
 
 import { AboutProps } from "../lib/interfaces";
 import { aboutText } from "../constants";
-import {  navigationsText } from "../constants";
+import { navigationsText } from "../constants";
 
 import { toUpperCase } from "../utils/toUpperCase";
 import { useWindowWidth } from "../utils/useWindowWidth";
@@ -24,9 +24,12 @@ function About({ lang }: AboutProps) {
         {windowWidth < 1024 && (
           <div className="imgSection mobile">
             <img src={images.robbery} alt="robbery" />
+            {"secondArticle" in aboutTextData && (
+              <p className="lastArticle">{aboutTextData.secondArticle}</p>
+            )}
           </div>
         )}
-        {"secondArticle" in aboutTextData && (
+        {"secondArticle" in aboutTextData && windowWidth > 1024  && (
           <p className="lastArticle">{aboutTextData.secondArticle}</p>
         )}
       </div>

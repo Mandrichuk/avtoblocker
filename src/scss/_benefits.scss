@@ -1,6 +1,7 @@
 .benefitsContainer {
   @include sectionMargin;
-  @include flexCenter(column, center);
+  @include flexCenter(column, start);
+  align-items: start;
   width: 100%;
 
   .title {
@@ -17,7 +18,7 @@
   }
 
   .benefit {
-    @include flexCenter(row, center);
+    @include flexCenter(row, start);
     align-items: start;
 
     .icon {

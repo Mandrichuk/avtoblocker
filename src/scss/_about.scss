@@ -6,8 +6,9 @@
     margin-right: 2rem;
 
     .title {
+      font-size: size("title");
       @include setFont("Poppins", 600);
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
     }
 
     .accentText {
