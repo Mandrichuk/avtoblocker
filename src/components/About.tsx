@@ -1,5 +1,7 @@
 import React from "react";
 
+import Title from "./Title";
+
 import images from "../constants/index";
 
 import { AboutProps } from "../lib/interfaces";
@@ -16,7 +18,7 @@ function About({ lang }: AboutProps) {
   return (
     <section className="aboutSection" id={navigationsText.about.id}>
       <div className="textSection">
-        <h1 className="title">{toUpperCase(aboutTextData.title)}</h1>
+        <Title>{toUpperCase(aboutTextData.title)}</Title>
         {"firstArticle" in aboutTextData && <p>{aboutTextData.firstArticle}</p>}
         {"accentArticle" in aboutTextData && (
           <p className="accentText">{aboutTextData.accentArticle}</p>
@@ -29,7 +31,7 @@ function About({ lang }: AboutProps) {
             )}
           </div>
         )}
-        {"secondArticle" in aboutTextData && windowWidth > 1024  && (
+        {"secondArticle" in aboutTextData && windowWidth > 1024 && (
           <p className="lastArticle">{aboutTextData.secondArticle}</p>
         )}
       </div>

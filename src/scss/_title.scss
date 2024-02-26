@@ -1,5 +1,8 @@
 .titleContainer {
+  width: auto;
   @include flexCenter(column, center);
+  align-items: center;
+  margin-bottom: 2rem;
   .title {
     @include setFont("Poppins", 600);
     font-size: size("title");
@@ -8,7 +11,7 @@
   .underline {
     background-color: $secondary-color;
     width: 0;
-    height: 2px;
+    height: 3px;
     transition: all 0.5s ease; 
 
     &.active {

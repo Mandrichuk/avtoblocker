@@ -1,6 +1,6 @@
 import React from "react";
 
-import images from "../constants/index";
+import Title from "./Title";
 
 import { HowItWorksProps } from "../lib/interfaces";
 import { howItWorksText } from "../constants";
@@ -13,14 +13,16 @@ function HowItWorks({ lang }: HowItWorksProps) {
 
   return (
     <section className="howItWorksSection" id={navigationsText.howItWorks.id}>
+      <Title>{toUpperCase(howItWorksTextData.title)}</Title>
       <div className="text">
-        <h1 className="title">{toUpperCase(howItWorksTextData.title)}</h1>
         <div className="subtitle">{howItWorksTextData.subtitle}</div>
         <div className="article">{howItWorksTextData.article}</div>
-        {"description" in howItWorksTextData && <div className="description">{howItWorksTextData.description}</div>}
+        {"description" in howItWorksTextData && (
+          <div className="description">{howItWorksTextData.description}</div>
+        )}
       </div>
       <div className="imgContainer">
-      {/* <img  src={images.robbery} alt="robbery" /> */}
+        {/* <img  src={images.robbery} alt="robbery" /> */}
       </div>
     </section>
   );

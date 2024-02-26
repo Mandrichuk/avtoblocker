@@ -1,5 +1,7 @@
 import React from "react";
 
+import Title from "./Title";
+
 import { AdvantagesProps } from "../lib/interfaces";
 import { advantagesText } from "../constants/index";
 import { navigationsText } from "../constants";
@@ -11,7 +13,7 @@ function Advantages({ lang }: AdvantagesProps) {
 
   return (
     <section className="advantagesSection" id={navigationsText.advantages.id}>
-      <div className="title">{toUpperCase(advantagesTextData.title)}</div>
+      <Title>{toUpperCase(advantagesTextData.title)}</Title>
       <div className="advantagesGrid">
         {"advantages" in advantagesTextData &&
           advantagesTextData.advantages.map((advantage, index) => (

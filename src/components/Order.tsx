@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 
+import Title from "./Title";
+
 import Input from "./Input";
 import Button from "./Button";
 
@@ -87,8 +89,8 @@ function Order({ lang }: OrderProps) {
   return (
     <section className="orderSection" id={navigationsText.order.id}>
       <div className="imageContainer"></div>
+        <Title>{toUpperCase(orderTextData.title)}</Title>
       <div className="form">
-        <h1 className="title">{toUpperCase(orderTextData.title)}</h1>
         <p className="article">{orderTextData.article}</p>
         <form>
           <div className="inputContainer">

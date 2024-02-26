@@ -33,7 +33,6 @@ function Page() {
       
       <ZoomDisable />
       <Header changeLang={changeLang} lang={lang} />
-      <Title>Hello</Title>
       <div className="wrapper">
         <About lang={lang} />
         <Benefits lang={lang} />

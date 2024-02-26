@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+import images from "../constants";
+
 import { HeaderProps } from "../lib/interfaces";
 import { headerText } from "../constants";
 import { sosialsText } from "../constants";
@@ -76,8 +78,9 @@ function Header({ changeLang, lang }: HeaderProps) {
   return (
     <header id={navigationsText.header.id}>
       <nav>
-        {/* <img src="" alt="" /> */}
-        <p className={`logo ${open && "open"}`}>Logo</p>
+        <div className={`logo ${open && "open"}`}>
+          <img src={images.logo} alt="logo" />
+        </div>
         {windowWidth > 1024 ? (
           <>
             <div className="nav-block">

@@ -1,21 +1,25 @@
 .button {
-  @include setFont("Poppins", 300);
   @include buttonWidth(100%);
-  padding: 10px 20px;
-  font-size: size("button");
   border: none;
   cursor: pointer;
   background-color: $primary-color;
   color: set-text-color($primary-color);
   border-radius: $border-radius;
+  background-color: $primary-color;
   transition: transition("normal");
-  font-weight: weight("bold");
 
   &.accent {
     background-color: $secondary-color;
-     
+
     &:hover {
       background-color: brighter-color($secondary-color);
     }
+  }
+  .text {
+    background-color: $secondary-color;
+    padding: 10px 20px;
+    font-size: size("button");
+    font-weight: weight("bold");
+    @include setFont("Poppins", 600);
   }
 }

@@ -6,7 +6,6 @@
   .title {
     @include setFont("Poppins", 600);
     font-size: size("title");
-    margin-bottom: 3rem;
   }
 
   .advantagesGrid {

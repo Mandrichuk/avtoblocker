@@ -21,6 +21,10 @@ import blocker3 from "../assets/blocker3.png";
 import blocker4 from "../assets/blocker4.png";
 import thief from "../assets/thief.png";
 import ninja from "../assets/ninja.png";
+import clock from "../assets/clock.png";
+import phone from "../assets/phone.png";
+import location from "../assets/location.png";
+import logo from "../assets/logo.png";
 
 import {
   type Sosials,
@@ -38,6 +42,7 @@ import {
 } from "../lib/types";
 
 export default {
+  logo,
   carHeader,
   robbery,
   buttonON,
@@ -56,6 +61,9 @@ export default {
   blocker4,
   thief,
   ninja,
+  clock,
+  phone,
+  location,
 };
 
 export const inputAlertText: inputAlert = {
@@ -199,8 +207,7 @@ export const headerText: Header = {
     },
     title: "AVTOBLOCK",
     subtitle: "Авторская технология безопасности",
-    article:
-      "Blocker - профессиональная защита от угона вашего авто!",
+    article: "Blocker - профессиональная защита от угона вашего авто!",
     button: {
       name: "Заказать блокер",
       path: "/#order",
@@ -228,8 +235,7 @@ export const headerText: Header = {
     },
     title: "AVTOBLOCK",
     subtitle: "Author's Technology",
-    article:
-      "Blocker - professional anti-theft protection for your car!",
+    article: "Blocker - professional anti-theft protection for your car!",
     button: {
       name: "Order blocker",
       path: "/#order",
@@ -338,7 +344,12 @@ export const benefitsText: Benefits = {
 };
 
 export const catalogText: Catalog = {
-  imagesGallery: [{image: blocker1, id: 1}, {image: blocker2, id: 2}, {image: blocker3, id: 3}, {image: blocker4, id: 4}],
+  imagesGallery: [
+    { image: blocker1, id: 1 },
+    { image: blocker2, id: 2 },
+    { image: blocker3, id: 3 },
+    { image: blocker4, id: 4 },
+  ],
   ru: {
     title: "Галерея",
     name: "Blocker “Стандарт”",
@@ -605,17 +616,17 @@ export const footerText: Footer = {
     ],
     details: [
       {
-        image: "detailsImage",
+        image: location,
         firstDetailLine: "г. Киев, ул. Киквидзе, 43",
         secondDetailLine: "(Правый берег, Печерский р-н)",
       },
       {
-        image: "detailsImage",
+        image: clock,
         firstDetailLine: "Пн-Пт с 10-00 до 19-00 ",
         secondDetailLine: "Cб-Вс - по договоренности",
       },
       {
-        image: "detailsImage",
+        image: phone,
         firstDetailLine: "(067) 000-0-000",
         secondDetailLine: "(066) 000-0-000",
       },
@@ -644,17 +655,17 @@ export const footerText: Footer = {
     ],
     details: [
       {
-        image: "detailsImage",
+        image: location,
         firstDetailLine: "Kyiv, Kikvidze St, 43 ",
         secondDetailLine: "(Right Bank, Pechersk District)",
       },
       {
-        image: "detailsImage",
+        image: clock,
         firstDetailLine: "Mon-Fri from 10-00 to 19-00",
         secondDetailLine: "Sun-Sat - on agreement",
       },
       {
-        image: "detailsImage",
+        image: phone,
         firstDetailLine: "(067) 000-0-000",
         secondDetailLine: "(066) 000-0-000",
       },

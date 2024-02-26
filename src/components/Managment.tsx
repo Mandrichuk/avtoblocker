@@ -1,5 +1,7 @@
 import React from "react";
 
+import Title from "./Title";
+
 import images from "../constants/index";
 
 import { ManagementProps } from "../lib/interfaces";
@@ -16,7 +18,7 @@ function Managment({ lang }: ManagementProps) {
   return (
     <section className="managmentSection" id={navigationsText.managment.id}>
       <div className="wrapper">
-        <h1 className="title">{toUpperCase(managementTextData.title)}</h1>
+        <Title>{toUpperCase(managementTextData.title)}</Title>
         <div className="subtitle">{managementTextData.subtitle}</div>
         <div className="details">
           <div className="on">

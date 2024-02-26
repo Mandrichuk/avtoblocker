@@ -18,15 +18,22 @@ function Footer({ lang }: FooterProps) {
             {"details" in footerTextData &&
               footerTextData.details.map((detail, index) => (
                 <div key={`detail-${index}`} className="detail">
-                  <p>{detail.firstDetailLine}</p>
-                  <p>{detail.secondDetailLine}</p>
+                  <div className="icon">
+                    <img src={detail.image} alt="icon" />
+                  </div>
+                  <div className="text">
+                    <p>{detail.firstDetailLine}</p>
+                    <p>{detail.secondDetailLine}</p>
+                  </div>
                 </div>
               ))}
           </div>
         </div>
         <div className="contacts">
           {"sosialsText" in footerTextData && (
-            <div className="title">{toUpperCase(footerTextData.sosialsText)}</div>
+            <div className="title">
+              {toUpperCase(footerTextData.sosialsText)}
+            </div>
           )}
           <div className="sosials">
             {"sosials" in footerTextData &&

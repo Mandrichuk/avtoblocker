@@ -304,7 +304,7 @@
 
         .on {
           img {
-            width: 50%;
+            width: 70%;
           }
           .subtitle {
             @include setFont("Poppins", 600);
@@ -326,7 +326,7 @@
         }
         .off {
           img {
-            width: 50%;
+            width: 70%;
           }
         }
       }
@@ -446,7 +446,7 @@
     .title {
       @include setFont("Poppins", 600);
       font-size: size("title");
-      margin-bottom: 3rem;
+      margin-bottom: 0;
     }
 
     .subtitle {
@@ -600,7 +600,7 @@
     .title {
       @include setFont("Poppins", 600);
       font-size: size("title");
-      margin-bottom: 3rem;
+      margin-bottom: 0;
     }
 
     .subtitle {

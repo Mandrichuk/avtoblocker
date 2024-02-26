@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import images from "../constants/index";
+import Title from "./Title";
 
 import Button from "./Button";
 
@@ -19,14 +19,18 @@ function Catalog({ lang }: CatalogProps) {
   return (
     <section className="catalogSection" id={navigationsText.catalog.id}>
       <div className="wrapper">
-        <h1 className="title">{toUpperCase(catalogTextData.title)}</h1>
+        <Title>{toUpperCase(catalogTextData.title)}</Title>
 
         <div className="fullCatalog">
           <div className="images">
             <div className="allImages">
               <div className="imagesGallery">
                 {catalogText.imagesGallery.map((imageGallery, index) => (
-                  <div onClick={() => setCurrentImage(imageGallery.id)} key={`image-${index}`} className="catalogImage">
+                  <div
+                    onClick={() => setCurrentImage(imageGallery.id)}
+                    key={`image-${index}`}
+                    className="catalogImage"
+                  >
                     <img src={imageGallery.image} alt="catalogImage" />
                   </div>
                 ))}

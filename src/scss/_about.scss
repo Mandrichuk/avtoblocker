@@ -4,11 +4,11 @@
   .textSection {
     flex: 1.25;
     margin-right: 2rem;
+    @include flexCenter(column, center);
 
     .title {
       font-size: size("title");
       @include setFont("Poppins", 600);
-      margin-bottom: 2rem;
     }
 
     .accentText {

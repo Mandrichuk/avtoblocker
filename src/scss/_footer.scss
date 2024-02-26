@@ -5,8 +5,8 @@ footer {
   margin-top: 4rem;
 
   .details {
-    width: wrapperWidth("xxl");
     @include flexCenter(row, start);
+    width: wrapperWidth("xxl");
     align-items: start;
     max-width: 1800px;
     padding: 4rem 0;
@@ -24,10 +24,19 @@ footer {
     }
 
     .personalData {
+      @include flexCenter(row, start);
       margin-right: 3rem;
       display: grid;
       .detail {
         margin-bottom: 1rem;
+      }
+
+      .detail {
+        @include flexCenter(row, start);
+
+        .icon {
+          margin-right: 1.5rem;
+        }
       }
 
       p {

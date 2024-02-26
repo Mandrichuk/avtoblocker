@@ -40,7 +40,7 @@ function Title({ children }: TitleProps) {
     <motion.div
       className="titleContainer"
       ref={containerRef}
-      whileHover={{ scale: 1.1 }}
+      whileHover={{ color: "#a50808" }}
     >
       <h3 className="title">{toUpperCase(children)}</h3>
       <motion.div
