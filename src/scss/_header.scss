@@ -3,7 +3,7 @@ header {
   @include flexCenter(row, center);
   position: relative;
   width: 100%;
-  padding-top: 45.25%;
+  padding-top: 55.25%;
   overflow: hidden;
   background:
     linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
@@ -177,8 +177,7 @@ header {
 
       .article {
         font-size: size("article");
-        width: wrapperWidth("xl") - 5%;
-        max-width: 800px;
+        width: 100%;
         margin-bottom: 2rem;
       }
     }

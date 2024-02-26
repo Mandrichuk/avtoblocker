@@ -18,6 +18,7 @@ function Order({ lang }: OrderProps) {
   const orderTextData = orderText[lang] || orderText["en"];
   const [loading, setLoading] = useState(false);
   const [activeError, setActiveError] = useState(false);
+  const [devastation, setDevastation] = useState(false);
   const [form, setForm] = useState<OrderInputs>({
     name: "",
     surname: "",
@@ -54,8 +55,10 @@ function Order({ lang }: OrderProps) {
         .then(
           () => {
             setLoading(false);
-            alert("Thank you! I will get back to you as soon as possible.");
+            // TODO: Add localization
+            alert("Thank you! We will contact you as soon as possible.");
 
+            setDevastation(true);
             setForm({
               name: "",
               surname: "",
@@ -102,6 +105,7 @@ function Order({ lang }: OrderProps) {
                   type={orderTextData.inputs.nameInput.type}
                   placeholder={orderTextData.inputs.nameInput.placeholder}
                   field={orderTextData.inputs.nameInput.field}
+                  devastation={devastation}
                   getValue={getText}
                 />
               )}
@@ -112,6 +116,7 @@ function Order({ lang }: OrderProps) {
                   type={orderTextData.inputs.surnameInput.type}
                   placeholder={orderTextData.inputs.surnameInput.placeholder}
                   field={orderTextData.inputs.surnameInput.field}
+                  devastation={devastation}
                   getValue={getText}
                 />
               )}
@@ -123,6 +128,7 @@ function Order({ lang }: OrderProps) {
                 type={orderTextData.inputs.phoneNumberInput.type}
                 placeholder={orderTextData.inputs.phoneNumberInput.placeholder}
                 field={orderTextData.inputs.phoneNumberInput.field}
+                devastation={devastation}
                 getValue={getText}
               />
             )}
@@ -133,6 +139,7 @@ function Order({ lang }: OrderProps) {
                 type={orderTextData.inputs.emailInput.type}
                 placeholder={orderTextData.inputs.emailInput.placeholder}
                 field={orderTextData.inputs.emailInput.field}
+                devastation={devastation}
                 getValue={getText}
               />
             )}

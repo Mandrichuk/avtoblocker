@@ -23,7 +23,7 @@
   }
 
   header {
-    padding-top: 50%;
+    padding-top: 70%;
 
     nav {
       width: wrapperWidth("xl");
@@ -69,7 +69,7 @@
         right: 0;
 
         img {
-          max-width: 40%;
+          max-width: 60%;
           object-fit: cover;
         }
       }
@@ -78,6 +78,23 @@
 }
 
 @include media-lg {
+  .managmentSection {
+    .wrapper {
+      .imageContiner {
+        visibility: visible;
+        @include flexCenter(row, end);
+        position: absolute;
+        bottom: -12rem;
+        right: 0;
+
+        img {
+          max-width: 50%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
   footer {
     .details {
       width: wrapperWidth("lg");
@@ -96,7 +113,7 @@
   }
 
   header {
-    padding-top: 50%;
+    padding-top: 70%;
 
     nav {
       width: wrapperWidth("lg");
@@ -169,15 +186,7 @@
   }
 
   header {
-    padding-top: 50%;
-
-    nav {
-      width: wrapperWidth("md");
-    }
-  }
-
-  header {
-    padding-top: 60%;
+    padding-top: 70%;
     nav {
       .burger-menu-container {
         .screen-nav-block {
@@ -369,7 +378,7 @@
   }
 
   header {
-    padding-top: 50%;
+    padding-top: 70%;
 
     nav {
       width: wrapperWidth("sm");
@@ -377,7 +386,22 @@
   }
 
   header {
-    padding-top: 110%;
+    padding-top: 90%;
+
+    nav {
+      .logo {
+        max-width: 40px;
+        max-height: 40px;
+      }
+    }
+
+    .header-content {
+      .article {
+        font-size: size("article");
+        width: 96%;
+        margin-bottom: 2rem;
+      }
+    }
 
     .header-content {
       margin-top: 60px;
@@ -385,7 +409,7 @@
       .title,
       .subtitle,
       .article {
-        margin-bottom: 1.5rem;
+        margin-bottom: 0;
       }
 
       .article {
@@ -528,7 +552,7 @@
         .sosials {
           @include flexCenter(row, start);
           gap: 1rem;
-          font-size: size("label");
+          font-size: size("title");
         }
       }
     }
@@ -537,7 +561,14 @@
 
 @include media-mob {
   header {
-    padding-top: 150%;
+    padding-top: 120%;
+
+    nav {
+      .logo {
+        max-width: 35px;
+        max-height: 35px;
+      }
+    }
 
     .header-content {
       .article {
@@ -660,7 +691,7 @@
       img {
         position: absolute;
         right: 0;
-        height: 200px;
+        height: 180px;
         object-fit: cover;
       }
     }

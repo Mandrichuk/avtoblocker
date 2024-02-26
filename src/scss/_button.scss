@@ -7,6 +7,11 @@
   border-radius: $border-radius;
   background-color: $primary-color;
   transition: transition("normal");
+  background-color: $secondary-color;
+  padding: 10px 20px;
+  font-size: size("button");
+  font-weight: weight("bold");
+  @include setFont("Poppins", 600);
 
   &.accent {
     background-color: $secondary-color;
@@ -14,12 +19,5 @@
     &:hover {
       background-color: brighter-color($secondary-color);
     }
-  }
-  .text {
-    background-color: $secondary-color;
-    padding: 10px 20px;
-    font-size: size("button");
-    font-weight: weight("bold");
-    @include setFont("Poppins", 600);
   }
 }

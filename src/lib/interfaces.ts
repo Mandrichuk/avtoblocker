@@ -33,5 +33,6 @@ export interface InputProps {
   type: string;
   placeholder: string;
   field: string;
+  devastation: boolean;
   getValue: (field: string, text: string) => void;
 }

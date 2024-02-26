@@ -19,8 +19,8 @@ $font-sizes: (
   "label": clamp(3rem, 4vw, 4rem),
   "title": clamp(1.8rem, 3vw, 2.5rem),
   "subtitle": clamp(1.2rem, 1.7vw, 1.5rem),
-  "article": clamp(0.9rem, 1.5vw, 1.3rem),
-  "button": clamp(0.9rem, 1.5vw, 1.3rem),
+  "article": clamp(1rem, 1.5vw, 1.3rem),
+  "button": clamp(1rem, 1.5vw, 1.3rem),
   "nav": clamp(0.9rem, 1.2vw, 1.1rem),
 );
 $transition-times: (

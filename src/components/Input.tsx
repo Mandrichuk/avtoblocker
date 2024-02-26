@@ -10,6 +10,7 @@ function Input({
   field,
   lang,
   error,
+  devastation,
   getValue,
 }: InputProps) {
   const inputAlertTextData = inputAlertText[lang] || inputAlertText["en"];
@@ -22,6 +23,12 @@ function Input({
   useEffect(() => {
     getValue(field, text);
   }, [text]);
+
+  useEffect(() => {
+    if (devastation) setText("");
+  console.log(text);
+  }, [devastation]);
+
 
   return (
     <section className="inputSection">

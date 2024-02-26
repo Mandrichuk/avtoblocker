@@ -9,9 +9,7 @@ function Button({ children, link }: ButtonProps) {
   return (
     <a href={link}>
       <button className={`button accent`}>
-        <motion.div whileHover={{ scale: 1.1 }} className="text">
           {toUpperCase(children)}
-        </motion.div>
       </button>
     </a>
   );

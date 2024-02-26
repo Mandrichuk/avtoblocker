@@ -2,7 +2,7 @@ input[type="text"],
 input[type="email"] {
   width: 100%;
   @include setFont("Poppins", 300);
-  font-size: size("article");
+  font-size: size("subtitle");
   background: transparent;
   border: none;
   border-bottom: 2px solid rgb(215, 215, 215);

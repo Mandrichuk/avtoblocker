@@ -21,9 +21,6 @@ function HowItWorks({ lang }: HowItWorksProps) {
           <div className="description">{howItWorksTextData.description}</div>
         )}
       </div>
-      <div className="imgContainer">
-        {/* <img  src={images.robbery} alt="robbery" /> */}
-      </div>
     </section>
   );
 }
