@@ -24,15 +24,16 @@ function Input({
     getValue(field, text);
   }, [text]);
 
-  useEffect(() => {
-    if (devastation) setText("");
-  console.log(text);
-  }, [devastation]);
+useEffect(() => {
+  if (devastation) {
+    setText("");
+  }
+}, [devastation]);
 
 
   return (
     <section className="inputSection">
-      <input onChange={changeText} type={type} placeholder={placeholder} />
+      <input onChange={changeText} type={type} placeholder={placeholder} value={text} />
       {error && <label>{inputAlertTextData.alert}</label>}
     </section>
   );

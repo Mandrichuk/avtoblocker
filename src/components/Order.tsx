@@ -24,6 +24,7 @@ function Order({ lang }: OrderProps) {
     surname: "",
     phoneNumber: "",
     email: "",
+    carModel: "",
   });
 
   function getText(field: string, text: string) {
@@ -49,6 +50,7 @@ function Order({ lang }: OrderProps) {
             from_email: form.email,
             to_email: "andrew.mandrichuk2007@gmail.com",
             phone_number: form.phoneNumber,
+            car_model: form.carModel,
           },
           "O_emiMG-zC22X_eF2"
         )
@@ -64,6 +66,7 @@ function Order({ lang }: OrderProps) {
               surname: "",
               phoneNumber: "",
               email: "",
+              carModel: "",
             });
           },
           (error) => {
@@ -139,6 +142,17 @@ function Order({ lang }: OrderProps) {
                 type={orderTextData.inputs.emailInput.type}
                 placeholder={orderTextData.inputs.emailInput.placeholder}
                 field={orderTextData.inputs.emailInput.field}
+                devastation={devastation}
+                getValue={getText}
+              />
+            )}
+            {"inputs" in orderTextData && (
+              <Input
+                error={form.email.length === 0 && activeError}
+                lang={lang}
+                type={orderTextData.inputs.carInput.type}
+                placeholder={orderTextData.inputs.carInput.placeholder}
+                field={orderTextData.inputs.carInput.field}
                 devastation={devastation}
                 getValue={getText}
               />

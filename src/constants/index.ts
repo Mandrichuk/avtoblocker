@@ -562,6 +562,7 @@ export const orderText: Order = {
         type: "text",
       },
       emailInput: { placeholder: "Email", field: "email", type: "email" },
+      carInput: { placeholder: "Марка и модель автомобиля", field: "carModel", type: "text" },
     },
     button: {
       name: "Отправить",
@@ -583,6 +584,7 @@ export const orderText: Order = {
         type: "text",
       },
       emailInput: { placeholder: "Email", field: "email", type: "text" },
+      carInput: { placeholder: "Brand and model of the car", field: "carModel", type: "text" },
     },
     button: {
       name: "Submit",

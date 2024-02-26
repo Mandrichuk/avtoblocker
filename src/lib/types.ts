@@ -161,6 +161,7 @@ type NamedInputs = {
   surnameInput: Input;
   phoneNumberInput: Input;
   emailInput: Input;
+  carInput: Input;
 };
 
 type OrderContent = {
@@ -222,6 +223,7 @@ export type OrderInputs = {
   surname: string;
   phoneNumber: string;
   email: string;
+  carModel: string;
 };
 
 export type inputAlertContent = {
