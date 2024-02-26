@@ -226,6 +226,24 @@ export type OrderInputs = {
   carModel: string;
 };
 
+type StatisticsItem = {
+  number: string;
+  text: string;
+};
+
+type StatisticsContent = {
+  statistics: StatisticsItem[];
+  subtitle: string;
+  example: string;
+  youtubeUrl: string;
+};
+
+export type Statistics = {
+  ru: StatisticsContent;
+  en: StatisticsContent;
+  sk?: StatisticsContent;
+};
+
 export type inputAlertContent = {
   alert: string;
 };
@@ -238,4 +256,4 @@ export type inputAlert = {
 
 export type TitleProps = {
   children: string;
-}
+};

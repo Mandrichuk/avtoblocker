@@ -1,10 +1,15 @@
-import React from 'react';
+import React from "react";
 
-function Statistics() {
+import { statisticsText } from "../constants";
+import { StatisticsProps } from "../lib/interfaces";
+
+function Statistics({ lang }: StatisticsProps) {
+  const statisticsTextData = statisticsText[lang] || statisticsText["en"];
+  console.log(statisticsTextData);
   return (
-    <div>
-
-    </div>
+    <section className="statisticsSection">
+      <div className="wrapper">sdfsdf</div>
+    </section>
   );
 }
 

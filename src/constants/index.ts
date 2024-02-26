@@ -39,6 +39,7 @@ import {
   type Footer,
   type Navigations,
   type inputAlert,
+  type Statistics,
 } from "../lib/types";
 
 export default {
@@ -272,6 +273,39 @@ export const aboutText: About = {
       "We are pleased to offer to your attention an extraordinary protection against theft - the electronic-mechanical immobilizer BLOCKER, which has been tested at the Certification Center for Security Equipment of the Ministry of Internal Affairs of Ukraine and has been officially approved for use, as evidenced by the received quality certificate.",
 
     sideImage: "sideImage",
+  },
+};
+
+export const statisticsText: Statistics = {
+  ru: {
+    statistics: [
+      {
+        number: "983",
+        text: "машин своровано в Словакии за последний год",
+      },
+      {
+        number: "871",
+        text: "машин из них угнано быстрее чем за 3 минуты",
+      },
+    ],
+    subtitle: "Но с нашей противоугонной системой вам это не грозит",
+    example: "Наглядный пример взлома машины",
+    youtubeUrl: "https://www.youtube.com/watch?v=9bZkp7q19f0",
+  },
+  en: {
+    statistics: [
+      {
+        number: "983",
+        text: "cars stolen in Slovakia in the last year",
+      },
+      {
+        number: "871",
+        text: "of them were stolen in less than 3 minutes",
+      },
+    ],
+    subtitle: "But with our anti-theft system, you're safe",
+    example: "A vivid example of car hacking",
+    youtubeUrl: "https://www.youtube.com/watch?v=9bZkp7q19f0",
   },
 };
 
@@ -562,7 +596,11 @@ export const orderText: Order = {
         type: "text",
       },
       emailInput: { placeholder: "Email", field: "email", type: "email" },
-      carInput: { placeholder: "Марка и модель автомобиля", field: "carModel", type: "text" },
+      carInput: {
+        placeholder: "Марка и модель автомобиля",
+        field: "carModel",
+        type: "text",
+      },
     },
     button: {
       name: "Отправить",
@@ -584,7 +622,11 @@ export const orderText: Order = {
         type: "text",
       },
       emailInput: { placeholder: "Email", field: "email", type: "text" },
-      carInput: { placeholder: "Brand and model of the car", field: "carModel", type: "text" },
+      carInput: {
+        placeholder: "Brand and model of the car",
+        field: "carModel",
+        type: "text",
+      },
     },
     button: {
       name: "Submit",

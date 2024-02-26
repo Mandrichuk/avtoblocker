@@ -11,8 +11,7 @@ import Footer from "./components/Footer";
 import Order from "./components/Order";
 import Managment from "./components/Managment";
 import HowItWorks from "./components/HowItWorks";
-
-import Title from "./components/Title";
+import Statistics from "./components/Statistics";
 
 import images from "./constants/index";
 
@@ -30,11 +29,15 @@ function Page() {
 
   return (
     <>
-      
       <ZoomDisable />
       <Header changeLang={changeLang} lang={lang} />
       <div className="wrapper">
         <About lang={lang} />
+      </div>
+
+      <Statistics lang={lang} />
+
+      <div className="wrapper">
         <Benefits lang={lang} />
       </div>
 

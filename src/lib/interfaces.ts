@@ -22,6 +22,8 @@ export interface OrderProps extends Language {}
 
 export interface FooterProps extends Language {}
 
+export interface StatisticsProps extends Language {}
+
 export interface ButtonProps {
   children: string;
   link: string;
