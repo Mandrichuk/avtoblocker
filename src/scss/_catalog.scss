@@ -1,6 +1,8 @@
 .catalogSection {
   @include sectionMargin;
   @include flexCenter(column, center);
+  margin-top: 4rem;
+  margin-bottom: 0;
   width: 100%;
   border: 2px solid $secondary-color;
   padding: 3rem 0;

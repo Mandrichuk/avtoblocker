@@ -1,6 +1,7 @@
 .statisticsSection {
   @include flexCenter(column, center);
-  margin-top: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 0;
   width: 100%;
 
   .statistics {

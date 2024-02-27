@@ -1,7 +1,8 @@
 .howItWorksSection {
+  margin-top: 4rem;
+  margin-bottom: 0;
   width: 100%;
   @include flexCenter(column, start);
-  @include sectionMargin;
   align-items: start;
   .text {
     max-width: 600px;
@@ -12,7 +13,7 @@
     }
 
     .subtitle {
-      @include setFont("Poppins", 300);
+      @include setFont("Poppins", 600);
       font-size: size("article");
       margin-bottom: 3rem;
     }
@@ -26,7 +27,7 @@
       position: relative;
       padding-left: 20px;
       color: $secondary-color;
-      
+
       &::before {
         content: "";
         position: absolute;

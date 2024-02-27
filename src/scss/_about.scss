@@ -1,9 +1,10 @@
 .aboutSection {
   @include flexCenter(row, space-between);
   @include sectionMargin;
+  margin-top: 4rem;
+  margin-bottom: 0;
   .textSection {
     flex: 1.25;
-    margin-right: 2rem;
     @include flexCenter(column, center);
 
     .title {

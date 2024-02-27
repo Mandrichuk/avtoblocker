@@ -6,6 +6,7 @@
     @include flexCenter(column, center);
     width: wrapperWidth("xxl");
     max-width: 1800px;
+    margin: 0;
   }
 }
 
@@ -332,7 +333,7 @@
       @include flexCenter(row, center);
       align-items: start;
       gap: 3rem;
-      margin-bottom: 2rem;
+      // margin-bottom: 2rem;
 
       img {
         object-fit: cover;
@@ -356,7 +357,8 @@
   }
 
   .advantagesSection {
-    @include sectionMargin;
+    margin-top: 5rem;
+    margin-bottom: 0;
     @include flexCenter(column, center);
     width: 100%;
 
@@ -378,7 +380,6 @@
   .managmentSection {
     .wrapper {
       @include flexCenter(row, center);
-      margin-bottom: 0;
       .imageContiner {
         display: none;
         visibility: hidden;
@@ -533,7 +534,8 @@
   }
 
   .advantagesSection {
-    @include sectionMargin;
+    margin-top: 5rem;
+    margin-bottom: 0;
     @include flexCenter(column, center);
     width: 100%;
 
@@ -554,7 +556,8 @@
 
   .managmentSection {
     @include flexCenter(column, center);
-    @include sectionMargin;
+    margin-top: 5rem;
+    margin-bottom: 0;
 
     .title {
       @include setFont("Poppins", 600);
@@ -725,7 +728,8 @@
   }
 
   .advantagesSection {
-    @include sectionMargin;
+    margin-top: 5rem;
+    margin-bottom: 0;
     @include flexCenter(column, center);
     width: 100%;
 
@@ -747,6 +751,8 @@
   .managmentSection {
     @include flexCenter(column, center);
     @include sectionMargin;
+    margin-top: 4em;
+    margin-bottom: 0;
 
     .title {
       @include setFont("Poppins", 600);

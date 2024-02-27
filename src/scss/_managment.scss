@@ -2,6 +2,7 @@
   @include flexCenter(column, center);
   width: 100%;
   position: relative;
+  margin-top: 4rem;
   margin-bottom: 0;
   .wrapper {
     @include flexCenter(column, center);

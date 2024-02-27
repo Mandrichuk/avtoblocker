@@ -1,6 +1,8 @@
 .benefitsContainer {
   @include sectionMargin;
   @include flexCenter(column, start);
+  margin-top: 4rem;
+  margin-bottom: 0;
   align-items: start;
   width: 100%;
 
