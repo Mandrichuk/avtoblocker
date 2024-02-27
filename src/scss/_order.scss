@@ -1,7 +1,7 @@
 .orderSection {
   width: 100%;
   @include flexCenter(column, center);
-  margin-top: 5rem;
+  margin-top: sectionMargin("xxl");
   margin-bottom: 0;
 
   .title {

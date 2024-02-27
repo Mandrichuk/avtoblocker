@@ -1,5 +1,5 @@
 .howItWorksSection {
-  margin-top: 4rem;
+  margin-top: sectionMargin("xxl");
   margin-bottom: 0;
   width: 100%;
   @include flexCenter(column, start);

@@ -1,5 +1,5 @@
 .advantagesSection {
-  margin-top: 5rem;
+  margin-top: sectionMargin("xxl");
   margin-bottom: 0;
   @include flexCenter(column, center);
   width: 100%;

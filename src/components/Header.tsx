@@ -14,56 +14,66 @@ import { useWindowWidth } from "../utils/useWindowWidth";
 import Button from "./Button";
 
 function Nav({ lang }: HeaderProps) {
+  const headerData = navigationsText.header[lang] || navigationsText.header["en"];
+  const aboutData = navigationsText.about[lang] || navigationsText.about["en"];
+  const benefitsData = navigationsText.benefits[lang] || navigationsText.benefits["en"];
+  const catalogData = navigationsText.catalog[lang] || navigationsText.catalog["en"];
+  const howItWorksData = navigationsText.howItWorks[lang] || navigationsText.howItWorks["en"];
+  const managmentData = navigationsText.managment[lang] || navigationsText.managment["en"];
+  const orderData = navigationsText.order[lang] || navigationsText.order["en"];
+  const advantagesData = navigationsText.advantages[lang] || navigationsText.advantages["en"];
+  const footerData = navigationsText.footer[lang] || navigationsText.footer["en"];
+
   return (
     <>
       {navigationsText.header.include && (
         <a href={`#${navigationsText.header.id}`}>
-          {navigationsText.header[lang]?.name}
+          {aboutData.name}
         </a>
       )}
       {navigationsText.about.include && (
         <a href={`#${navigationsText.about.id}`}>
-          {navigationsText.about[lang]?.name}
+          {aboutData.name}
         </a>
       )}
 
       {navigationsText.benefits.include && (
         <a href={`#${navigationsText.benefits.id}`}>
-          {navigationsText.benefits[lang]?.name}
+          {benefitsData.name}
         </a>
       )}
 
       {navigationsText.catalog.include && (
         <a href={`#${navigationsText.catalog.id}`}>
-          {navigationsText.catalog[lang]?.name}
+          {catalogData.name}
         </a>
       )}
 
       {navigationsText.howItWorks.include && (
         <a href={`#${navigationsText.howItWorks.id}`}>
-          {navigationsText.howItWorks[lang]?.name}
+          {howItWorksData.name}
         </a>
       )}
       {navigationsText.managment.include && (
         <a href={`#${navigationsText.managment.id}`}>
-          {navigationsText.managment[lang]?.name}
+          {managmentData.name}
         </a>
       )}
 
       {navigationsText.advantages.include && (
         <a href={`#${navigationsText.advantages.id}`}>
-          {navigationsText.advantages[lang]?.name}
+          {advantagesData.name}
         </a>
       )}
       {navigationsText.order.include && (
         <a href={`#${navigationsText.order.id}`}>
-          {navigationsText.order[lang]?.name}
+          {orderData.name}
         </a>
       )}
 
       {navigationsText.footer.include && (
         <a href={`#${navigationsText.footer.id}`}>
-          {navigationsText.footer[lang]?.name}
+          {footerData.name}
         </a>
       )}
     </>
@@ -119,20 +129,7 @@ function Header({ changeLang, lang }: HeaderProps) {
                 <ul>
                   <Nav lang={lang || "en"} changeLang={changeLang} />
                 </ul>
-                <div className="contactData">
-                  <p className="phone">+380000000000</p>
-                  <div className="sosials">
-                    {sosialsText.map((sosial, index) => (
-                      <a
-                        href={sosial.path}
-                        target="_blank"
-                        key={`sosials-${index}`}
-                      >
-                        {React.createElement(sosial.icon)}
-                      </a>
-                    ))}
-                  </div>
-                </div>
+               
               </div>
             </div>
           </div>
@@ -146,7 +143,7 @@ function Header({ changeLang, lang }: HeaderProps) {
           <p className="article">{headerTextData.article}</p>
           <div>
             <Button link={`#${navigationsText.order.id}`}>
-              {(headerTextData.button.name)}
+              {headerTextData.button.name}
             </Button>
           </div>
         </div>

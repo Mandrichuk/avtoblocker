@@ -2,12 +2,19 @@ $primary-color: #131313;
 $secondary-color: #a50808;
 $darker-gray: #777676;
 $border-radius: 0.1rem;
+$section-margin: (
+  "sm": 5rem,
+  "md": 6rem,
+  "lg": 7rem,
+  "xl": 8rem,
+  "xxl": 10rem,
+);
 $wrapper-width: (
   "sm": 90%,
   "md": 87%,
   "lg": 85%,
   "xl": 80%,
-  "xxl": 75%,
+  "xxl": 70%,
 );
 $weight-fonts: (
   "light": 300,
@@ -32,6 +39,10 @@ $font-families: (
   "Montserrat": Montserrat,
   "Poppins": Poppins
 );
+
+@function sectionMargin($section-name) {
+  @return map-get($section-margin, $section-name);
+}
 
 @function wrapperWidth($width-name) {
   @return map-get($wrapper-width, $width-name);

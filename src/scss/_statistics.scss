@@ -1,6 +1,6 @@
 .statisticsSection {
   @include flexCenter(column, center);
-  margin-top: 4rem;
+  margin-top: sectionMargin("xxl");
   margin-bottom: 0;
   width: 100%;
 

@@ -1,10 +1,9 @@
 .catalogSection {
   @include sectionMargin;
   @include flexCenter(column, center);
-  margin-top: 4rem;
+  margin-top: sectionMargin("xxl");
   margin-bottom: 0;
   width: 100%;
-  padding: 3rem 0;
   .wrapper {
     @include flexCenter(column, space-between);
     width: wrapperWidth("xl");

@@ -2,13 +2,9 @@ header {
   @include flexCenter(row, center);
   position: relative;
   width: 100%;
-  padding-top: 55.25%;
+  padding: 6rem 0;
   overflow: hidden;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-    url("../assets/carHeader.jpg") no-repeat center top;
-  background-size: cover;
-  font-family: "Poppins";
+  background-color: black;
 
   nav {
     @include flexCenter(row, space-between);
@@ -82,7 +78,7 @@ header {
             position: fixed;
 
             top: 2rem;
-            right: 3rem;
+            right: 2rem;
 
             &::before {
               transform: rotate(45deg) translate(5px, 8px);
@@ -151,10 +147,9 @@ header {
   }
 
   .header-content-wrapper {
-    margin-top: 50px;
     @include flexCenter(column, center);
+    margin-top: 50px;
     width: 100%;
-    position: absolute;
     inset: 0;
     z-index: 0;
     .header-content {

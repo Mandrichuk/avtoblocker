@@ -17,6 +17,18 @@
     }
   }
 
+  .aboutSection,
+  .catalogSection,
+  .advantagesSection,
+  .benefitsContainer,
+  .managmentSection,
+  .statisticsSection,
+  .howItWorksSection,
+  footer,
+  .orderSection {
+    margin-top: sectionMargin("xl");
+  }
+
   .catalogSection {
     .wrapper {
       width: wrapperWidth("xl");
@@ -24,8 +36,6 @@
   }
 
   header {
-    padding-top: 70%;
-
     nav {
       width: wrapperWidth("xl");
     }
@@ -56,6 +66,18 @@
 }
 
 @include media-lg {
+  .aboutSection,
+  .catalogSection,
+  .advantagesSection,
+  .benefitsContainer,
+  .managmentSection,
+  .statisticsSection,
+  .howItWorksSection,
+  footer,
+  .orderSection {
+    margin-top: sectionMargin("lg");
+  }
+
   .catalogSection {
     .fullCatalog {
       .images {
@@ -108,8 +130,6 @@
   }
 
   header {
-    padding-top: 70%;
-
     nav {
       width: wrapperWidth("lg");
     }
@@ -133,6 +153,18 @@
 }
 
 @include media-md {
+  .aboutSection,
+  .catalogSection,
+  .advantagesSection,
+  .benefitsContainer,
+  .managmentSection,
+  .statisticsSection,
+  .howItWorksSection,
+  footer,
+  .orderSection {
+    margin-top: sectionMargin("md");
+  }
+
   .catalogSection {
     .fullCatalog {
       @include flexCenter(row, space-between);
@@ -246,7 +278,8 @@
   }
 
   header {
-    padding-top: 70%;
+    padding: 3rem 0;
+
     nav {
       .burger-menu-container {
         .screen-nav-block {
@@ -261,7 +294,7 @@
 
           width: 100vw;
           background-color: $primary-color;
-          opacity: 0.97;
+          opacity: 1;
           visibility: hidden;
 
           ul {
@@ -280,24 +313,6 @@
 
           &.open {
             visibility: visible;
-
-            .contactData {
-              font-size: size("article");
-              position: fixed;
-              bottom: 4rem;
-              left: 2rem;
-            }
-
-            .sosials {
-              font-size: size("title");
-              position: fixed;
-              bottom: 1rem;
-              left: 2rem;
-
-              a {
-                margin-right: 0.5rem;
-              }
-            }
           }
         }
       }
@@ -315,7 +330,6 @@
       @include flexCenter(row, center);
       align-items: start;
       gap: 3rem;
-      // margin-bottom: 2rem;
 
       img {
         object-fit: cover;
@@ -339,8 +353,6 @@
   }
 
   .advantagesSection {
-    margin-top: 5rem;
-    margin-bottom: 0;
     @include flexCenter(column, center);
     width: 100%;
 
@@ -419,12 +431,24 @@
 }
 
 @include media-sm {
-    .catalogSection {
+  .aboutSection,
+  .catalogSection,
+  .advantagesSection,
+  .benefitsContainer,
+  .managmentSection,
+  .howItWorksSection,
+  .statisticsSection,
+  footer,
+  .orderSection {
+    margin-top: sectionMargin("sm");
+  }
+
+  .catalogSection {
     .fullCatalog {
       @include flexCenter(column, space-between);
 
       .text {
-      margin-left: 0; 
+        margin-left: 0;
       }
 
       .images {
@@ -442,7 +466,6 @@
       }
     }
   }
-
 
   .statisticsSection {
     @include flexCenter(column, center);
@@ -475,16 +498,12 @@
   }
 
   header {
-    padding-top: 70%;
-
     nav {
       width: wrapperWidth("sm");
     }
   }
 
   header {
-    padding-top: 90%;
-
     nav {
       .logo {
         max-width: 40px;
@@ -501,8 +520,6 @@
     }
 
     .header-content {
-      margin-top: 60px;
-
       .title,
       .subtitle,
       .article {
@@ -516,8 +533,6 @@
   }
 
   .advantagesSection {
-    margin-top: 5rem;
-    margin-bottom: 0;
     @include flexCenter(column, center);
     width: 100%;
 
@@ -670,8 +685,6 @@
   }
 
   header {
-    padding-top: 120%;
-
     nav {
       .logo {
         max-width: 35px;
@@ -689,8 +702,6 @@
   }
 
   .advantagesSection {
-    margin-top: 5rem;
-    margin-bottom: 0;
     @include flexCenter(column, center);
     width: 100%;
 
