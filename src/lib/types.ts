@@ -227,7 +227,7 @@ export type OrderInputs = {
 };
 
 type StatisticsItem = {
-  number: string;
+  number: number;
   text: string;
 };
 

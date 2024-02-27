@@ -168,6 +168,83 @@
 }
 
 @include media-md {
+  .statisticsSection {
+    @include flexCenter(column, center);
+    width: 100%;
+
+    .statistics {
+      width: 100%;
+      @include flexCenter(row, space-between);
+      text-align: center;
+      padding: 0 15%;
+
+      .statistic {
+        max-width: 180px;
+        .number {
+          @include setFont("Poppins", 700);
+          font-size: size("label");
+          color: $secondary-color;
+
+          span {
+            font-weight: weight("bold");
+          }
+        }
+
+        .text {
+          @include setFont("Poppins", 300);
+          font-size: calc(size("article") - 0.2rem);
+        }
+      }
+    }
+
+    .subtitle {
+      text-align: center;
+      p {
+        top: -1.5rem;
+        @include setFont("Poppins", 600);
+        font-size: size("subtitle");
+        padding: 10px 20px;
+        background-color: $secondary-color;
+      }
+    }
+
+    .exampleContainer {
+      padding: 0;
+      margin: 3rem 0;
+      width: 100%;
+
+      .exampleDetails {
+        @include flexCenter(row, end);
+        .imageContainer {
+          max-width: 100px;
+          img {
+            object-fit: cover;
+            width: 100%;
+          }
+        }
+
+        .example {
+          @include setFont("Poppins", 600);
+          font-size: size("article");
+          margin-bottom: 1rem;
+        }
+      }
+
+      .videoWrapper {
+        position: relative;
+        padding-top: 56.25%;
+
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
   footer {
     .details {
       width: wrapperWidth("md");
@@ -359,6 +436,18 @@
 }
 
 @include media-sm {
+  .statisticsSection {
+    @include flexCenter(column, center);
+    width: 100%;
+
+    .statistics {
+      width: 100%;
+      @include flexCenter(row, space-between);
+      text-align: center;
+      padding: 0 5%;
+    }
+  }
+
   footer {
     .details {
       width: wrapperWidth("sm");
@@ -560,6 +649,37 @@
 }
 
 @include media-mob {
+  .aboutSection {
+    @include flexCenter(column, space-between);
+    .textSection {
+      margin-right: 0;
+      @include flexCenter(column, center);
+    }
+
+    .imgSection {
+      @include flexCenter(column, center);
+      align-items: start;
+      gap: 1rem;
+      margin-bottom: 0;
+    }
+  }
+
+  .statisticsSection {
+    @include flexCenter(column, center);
+    width: 100%;
+
+    .statistics {
+      width: 100%;
+      @include flexCenter(row, space-between);
+      text-align: center;
+      padding: 0;
+
+      .statistic {
+        max-width: 150px;
+      }
+    }
+  }
+
   header {
     padding-top: 120%;
 

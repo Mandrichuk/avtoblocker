@@ -25,6 +25,7 @@ import clock from "../assets/clock.png";
 import phone from "../assets/phone.png";
 import location from "../assets/location.png";
 import logo from "../assets/logo.png";
+import arrowdown from "../assets/arrowdown.png";
 
 import {
   type Sosials,
@@ -65,6 +66,7 @@ export default {
   clock,
   phone,
   location,
+  arrowdown,
 };
 
 export const inputAlertText: inputAlert = {
@@ -280,32 +282,32 @@ export const statisticsText: Statistics = {
   ru: {
     statistics: [
       {
-        number: "983",
+        number: 983,
         text: "машин своровано в Словакии за последний год",
       },
       {
-        number: "871",
+        number: 871,
         text: "машин из них угнано быстрее чем за 3 минуты",
       },
     ],
     subtitle: "Но с нашей противоугонной системой вам это не грозит",
     example: "Наглядный пример взлома машины",
-    youtubeUrl: "https://www.youtube.com/watch?v=9bZkp7q19f0",
+    youtubeUrl: "https://www.youtube.com/embed/PEMOWPj2i-0?si=Auz1WnTH2HjSSMEn",
   },
   en: {
     statistics: [
       {
-        number: "983",
+        number: 983,
         text: "cars stolen in Slovakia in the last year",
       },
       {
-        number: "871",
+        number: 871,
         text: "of them were stolen in less than 3 minutes",
       },
     ],
     subtitle: "But with our anti-theft system, you're safe",
     example: "A vivid example of car hacking",
-    youtubeUrl: "https://www.youtube.com/watch?v=9bZkp7q19f0",
+    youtubeUrl: "https://www.youtube.com/embed/PEMOWPj2i-0?si=Auz1WnTH2HjSSMEn",
   },
 };
 
