@@ -26,6 +26,7 @@ import phone from "../assets/phone.png";
 import location from "../assets/location.png";
 import logo from "../assets/logo.png";
 import arrowdown from "../assets/arrowdown.png";
+import blocker from "../assets/blocker.png";
 
 import {
   type Sosials,
@@ -67,6 +68,7 @@ export default {
   phone,
   location,
   arrowdown,
+  blocker,
 };
 
 export const inputAlertText: inputAlert = {
@@ -381,7 +383,7 @@ export const benefitsText: Benefits = {
 
 export const catalogText: Catalog = {
   imagesGallery: [
-    { image: blocker1, id: 1 },
+    { image: blocker, id: 1 },
     { image: blocker2, id: 2 },
     { image: blocker3, id: 3 },
     { image: blocker4, id: 4 },

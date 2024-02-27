@@ -23,26 +23,13 @@ function Catalog({ lang }: CatalogProps) {
 
         <div className="fullCatalog">
           <div className="images">
-            <div className="allImages">
-              <div className="imagesGallery">
-                {catalogText.imagesGallery.map((imageGallery, index) => (
-                  <div
-                    onClick={() => setCurrentImage(imageGallery.id)}
-                    key={`image-${index}`}
-                    className="catalogImage"
-                  >
-                    <img src={imageGallery.image} alt="catalogImage" />
-                  </div>
-                ))}
-              </div>
-              {catalogText.imagesGallery.map((imageGallery, index) =>
-                imageGallery.id === currentImage ? (
-                  <div key={index} className="currentImage">
-                    <img src={imageGallery.image} alt="catalogImage" />
-                  </div>
-                ) : null
-              )}
-            </div>
+            {catalogText.imagesGallery.map((imageGallery, index) =>
+              imageGallery.id === currentImage ? (
+                <div key={index} className="currentImage">
+                  <img src={imageGallery.image} alt="catalogImage" />
+                </div>
+              ) : null
+            )}
           </div>
           <div className="text">
             <div className="name">{catalogTextData.name}</div>

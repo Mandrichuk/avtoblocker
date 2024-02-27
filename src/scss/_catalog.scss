@@ -4,15 +4,9 @@
   margin-top: 4rem;
   margin-bottom: 0;
   width: 100%;
-  border: 2px solid $secondary-color;
   padding: 3rem 0;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-    url("../assets/bgDecoration.jpg") no-repeat center top;
-  background-size: cover;
-
   .wrapper {
-    @include flexCenter(column, center);
+    @include flexCenter(column, space-between);
     width: wrapperWidth("xl");
   }
 
@@ -22,17 +16,10 @@
   }
 
   .fullCatalog {
-    @include flexCenter(row, center);
-
-    .images,
-    .text {
-      flex: 1;
-    }
-
+    width: 100%;
+    @include flexCenter(row, space-between);
     .text {
       margin-left: 2rem;
-      background-color: rgba($primary-color, 0.8);
-      padding: 1rem;
       .name {
         @include setFont("Poppins", 600);
         font-size: size("title");
@@ -59,40 +46,12 @@
     .images {
       @include flexCenter(row, center);
       align-items: start;
-      .allImages {
-        @include flexCenter(row, center);
-        align-items: start;
-
-        .imagesGallery {
-          display: grid;
-          gap: 1rem;
-
-          .catalogImage {
-            background-color: rgba($primary-color, 0.9);
-          }
-        }
-
-        .currentImage {
-          background-color: rgba($primary-color, 0.9);
-          margin-left: 1rem;
-        }
-
-        .catalogImage {
-          cursor: pointer;
-          img {
-            height: 110px;
-            width: 110px;
-            object-fit: cover;
-          }
-        }
-      }
 
       .currentImage {
-        flex: 0.75;
+        width: 330px;
         img {
-          height: 600px;
-          width: 600px;
           object-fit: cover;
+          width: 100%;
         }
       }
     }
