@@ -15,6 +15,8 @@ import Statistics from "./components/Statistics";
 
 import images from "./constants/index";
 
+import { SEOText } from "./constants/index";
+
 import { useWindowWidth } from "./utils/useWindowWidth";
 import ZoomDisable from "./utils/ZoomDisable";
 
@@ -29,6 +31,8 @@ function Page() {
 
   return (
     <>
+      <title>{SEOText.title}</title>
+      <meta name="description" content={SEOText.description} />
       <ZoomDisable />
       <Header changeLang={changeLang} lang={lang} />
       <div className="wrapper">

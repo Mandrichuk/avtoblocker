@@ -42,6 +42,7 @@ import {
   type Navigations,
   type inputAlert,
   type Statistics,
+  type SEOProps,
 } from "../lib/types";
 
 export default {
@@ -69,6 +70,12 @@ export default {
   location,
   arrowdown,
   blocker,
+};
+
+export const SEOText: SEOProps = {
+  title: "Avtoblock - professional anti-theft protection for your car!",
+  description:
+    "We are offering a protection against theft - the electronic-mechanical immobilizer BLOCKER. With its advanced technology, it can be installed in any car! Based in Slovakia, Bratislava",
 };
 
 export const inputAlertText: inputAlert = {

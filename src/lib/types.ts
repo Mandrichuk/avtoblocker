@@ -260,3 +260,9 @@ export type inputAlert = {
 export type TitleProps = {
   children: string;
 };
+
+
+export type SEOProps = {
+  title: string;
+  description: string;
+} 
