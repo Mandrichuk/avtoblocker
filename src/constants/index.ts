@@ -644,6 +644,9 @@ export const footerText: Footer = {
   ru: {
     title: "AVTOBLOCK",
     sosialsText: "Контакты",
+    createdByText: "Созданно",
+    createdByCompany: "nowandhere.agency",
+    companyLink: "https://nowandhere.agency/",
     sosials: [
       {
         icon: FaFacebookSquare,
@@ -683,6 +686,9 @@ export const footerText: Footer = {
   en: {
     title: "AVTOBLOCK",
     sosialsText: "Contacts",
+    createdByText: "Created by",
+    createdByCompany: "nowandhere.agency",
+    companyLink: "https://nowandhere.agency/",
     sosials: [
       {
         icon: FaFacebookSquare,

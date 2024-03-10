@@ -1,4 +1,5 @@
 footer {
+  position: relative;
   background-color: black;
   @include flexCenter(row, center);
   width: 100%;
@@ -52,5 +53,12 @@ footer {
         font-size: size("title");
       }
     }
+  }
+  .creatorSection {
+    @include flexCenter(row, end);
+    position: absolute;
+    bottom: 10px;
+    color: rgb(132, 132, 132);
+    font-size: 13px;
   }
 }

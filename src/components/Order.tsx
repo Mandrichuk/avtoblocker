@@ -46,7 +46,7 @@ function Order({ lang }: OrderProps) {
           "template_2mjltnq",
           {
             from_name: form.name,
-            to_name: "Andrew Mandrichuk",
+            to_name: "avtoblock.com",
             from_email: form.email,
             to_email: "andrew.mandrichuk2007@gmail.com",
             phone_number: form.phoneNumber,

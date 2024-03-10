@@ -113,12 +113,12 @@ function Header({ changeLang, lang }: HeaderProps) {
               >
                 en
               </p>
-              <p
+              {/* <p
                 onClick={() => changeLang("sk")}
                 className={lang === "sk" ? "active" : ""}
               >
                 sk
-              </p>
+              </p> */}
             </div>
           </>
         ) : (

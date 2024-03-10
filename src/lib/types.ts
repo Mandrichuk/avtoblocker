@@ -192,6 +192,9 @@ type Detail = {
 type FooterContent = {
   title: string;
   sosialsText: string;
+  createdByText: string;
+  createdByCompany: string;
+  companyLink: string;
   sosials: SocialLink[];
   details: Detail[];
 };
@@ -199,7 +202,7 @@ type FooterContent = {
 export type Footer = {
   ru: FooterContent;
   en: FooterContent;
-  sk?: HeaderContent;
+  sk?: FooterContent;
 };
 
 type LanguageItem = {

@@ -8,7 +8,7 @@ import { toUpperCase } from "../utils/toUpperCase";
 
 function Footer({ lang }: FooterProps) {
   const footerTextData = footerText[lang] || footerText["en"];
-
+  console.log(footerTextData.createdByText);
   return (
     <footer id={navigationsText.footer.id}>
       <div className="details">
@@ -44,6 +44,11 @@ function Footer({ lang }: FooterProps) {
               ))}
           </div>
         </div>
+      </div>
+      <div className="creatorSection">
+        <p className="createdByText">{footerTextData.createdByText} &nbsp;</p>
+
+        <a href={footerTextData.companyLink} target="_blank" className="createdByCompany">{footerTextData.createdByCompany}</a>
       </div>
     </footer>
   );
